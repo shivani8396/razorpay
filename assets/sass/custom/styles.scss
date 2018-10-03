@@ -1,0 +1,40 @@
+
+// ######################################## //
+// ## STYLE.SCSS ## //
+// ######################################## //
+
+// Base
+@import "base/colors";
+@import "base/fonts";
+
+// Helpers
+@import "helpers/mixins";
+
+// Components
+@import "components/alerts";
+@import "components/animations";
+@import "components/carousels";
+@import "components/dropdowns";
+@import "components/badges";
+@import "components/tags";
+@import "components/buttons";
+@import "components/forms";
+@import "components/modals";
+@import "components/texts";
+@import "components/cards";
+@import "components/logo";
+
+// Extras
+@import "layout/xtras";
+
+// Layout
+@import "layout/body";
+@import "layout/header";
+@import "layout/footer";
+
+// Pages
+@import "pages/home";
+
+// Vendors
+@import "vendors/animate";
+
