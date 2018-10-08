@@ -141,12 +141,7 @@ $desktop-width-lg: 1500px;
 // Brandon Grotesque Font Family
 // ----------------------------------
 @mixin ff-primary() {
-	font-family: 'sb-sans', -apple-system,system-ui,BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-	font-weight: 500;
-
-	strong {
-		font-weight: bold;
-	}
+	font-family: 'muli', -apple-system,system-ui,BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
 

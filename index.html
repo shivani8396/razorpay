@@ -1,21 +1,106 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/app.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/app.css">
 
-    <title>Razorpay</title>
-  </head>
-  <body>
-    <h1 class="red">Razorpay</h1>
+  <title>Razorpay</title>
+</head>
+<body>
 
-    <!-- jQuery first, then Bootstrap JS -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-  </body>
+  <!--********************************* Navbar **********************************-->
+  <div class="container">
+    <nav class="navbar navbar-expand-lg">
+      <a href="#" class="navbar-brand">
+        <img class="logo" src="assets/images/logo.svg" alt="Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle Navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="navbar-nav mr-auto left-list">
+          <li class="nav-item dropdown left-li" active>
+            <a href="#" class="nav-link dropdown-toggle left-link" id="productLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Products</a>
+            <div class="dropdown-menu" aria-labelledby="productLink">
+              <a href="#" class="dropdown-item">Payment Gateway</a>
+              <a href="#" class="dropdown-item">Route</a>
+              <a href="#" class="dropdown-item">Subscriptions</a>
+              <a href="#" class="dropdown-item">Smart Collect</a>
+              <a href="#" class="dropdown-item">Payment Links</a>
+              <a href="#" class="dropdown-item">Invoices</a>
+            </div>
+          </li>
+          <li class="nav-item left-li">
+            <a href="#" class="nav-link left-link">Develop</a>
+          </li>
+          <li class="nav-item left-li">
+            <a href="" class="nav-link left-link">Resources</a>
+          </li>
+        </ul>
+
+        <ul class="navbar-nav ml-auto right-list">
+          <li class="nav-item">
+            <a href="" class="nav-link hiring">We're hiring!</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="" class="nav-link">
+              <img class="flag" src="assets/images/flag.svg" alt="">
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">Log In</a>
+          </li>
+
+          <li class="nav-item">
+            <form action="">
+              <input type="email">
+              <button class="sign-up-btn" type="submit">Sign Up <span><i class="icon ion-md-arrow-forward "></i></span></button>
+            </form>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- home banner-->
+    <section class="banner" id="home-banner">
+      <div class="container">
+        <div class="header">
+          <h1 class="heading">The Future of <br>Payments is Here</h1>
+          <p class="sub-text">The easiest way to accept, process and disburse digital payments
+            for businesses in India. Sign up now to simplify your business.
+          </p>
+        </div>
+        <form action="submit" class="btn-input signup-form">
+          <input type="email" required="" placeholder="Your email address" name="email">
+          <button class="btn-icon">Sign Up<i class="i-arrow-forward"></i></button>
+        </form>
+        <div class="demo-btn">
+          <button class="btn demo-btn">View Demo</button>
+        </div>
+        <div class="footer-text">
+          <div class="badge">New</div>
+          <span>Accept payment via</span>
+          <b>GST compliant &nbsp;</b><br>
+          <span>payable</span>
+          <b>invoices.</b>
+          <a href="#">Read More</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- jQuery first, then Bootstrap JS -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+</body>
 </html>

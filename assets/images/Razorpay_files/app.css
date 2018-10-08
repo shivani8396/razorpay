@@ -7288,91 +7288,104 @@ a.text-dark:hover, a.text-dark:focus {
   font-family: 'Muli';
   font-style: normal;
   font-weight: 400;
-  src: local("Muli Regular"), local("Muli-Regular"), url(https://fonts.gstatic.com/s/muli/v11/7Auwp_0qiz-afT3GLQjUwkQ1OQ.woff2) format("woff2"); }
+  src: local("Muli Regular"), local("Muli-Regular"), url(https://fonts.gstatic.com/s/muli/v11/7Auwp_0qiz-afT3GLQjUwkQ1OQ.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB; }
 
 /* latin-ext */
 @font-face {
   font-family: 'Muli';
   font-style: normal;
   font-weight: 400;
-  src: local("Muli Regular"), local("Muli-Regular"), url(https://fonts.gstatic.com/s/muli/v11/7Auwp_0qiz-afTzGLQjUwkQ1OQ.woff2) format("woff2"); }
+  src: local("Muli Regular"), local("Muli-Regular"), url(https://fonts.gstatic.com/s/muli/v11/7Auwp_0qiz-afTzGLQjUwkQ1OQ.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF; }
 
 /* latin */
 @font-face {
   font-family: 'Muli';
   font-style: normal;
   font-weight: 400;
-  src: local("Muli Regular"), local("Muli-Regular"), url(https://fonts.gstatic.com/s/muli/v11/7Auwp_0qiz-afTLGLQjUwkQ.woff2) format("woff2"); }
+  src: local("Muli Regular"), local("Muli-Regular"), url(https://fonts.gstatic.com/s/muli/v11/7Auwp_0qiz-afTLGLQjUwkQ.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
 
 /* vietnamese */
 @font-face {
   font-family: 'Muli';
   font-style: normal;
   font-weight: 700;
-  src: local("Muli Bold"), local("Muli-Bold"), url(https://fonts.gstatic.com/s/muli/v11/7Au_p_0qiz-adYnjOCr2z24PMFk-0g.woff2) format("woff2"); }
+  src: local("Muli Bold"), local("Muli-Bold"), url(https://fonts.gstatic.com/s/muli/v11/7Au_p_0qiz-adYnjOCr2z24PMFk-0g.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB; }
 
 /* latin-ext */
 @font-face {
   font-family: 'Muli';
   font-style: normal;
   font-weight: 700;
-  src: local("Muli Bold"), local("Muli-Bold"), url(https://fonts.gstatic.com/s/muli/v11/7Au_p_0qiz-adYnjOCv2z24PMFk-0g.woff2) format("woff2"); }
+  src: local("Muli Bold"), local("Muli-Bold"), url(https://fonts.gstatic.com/s/muli/v11/7Au_p_0qiz-adYnjOCv2z24PMFk-0g.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF; }
 
 /* latin */
 @font-face {
   font-family: 'Muli';
   font-style: normal;
   font-weight: 700;
-  src: local("Muli Bold"), local("Muli-Bold"), url(https://fonts.gstatic.com/s/muli/v11/7Au_p_0qiz-adYnjOCX2z24PMFk.woff2) format("woff2"); }
+  src: local("Muli Bold"), local("Muli-Bold"), url(https://fonts.gstatic.com/s/muli/v11/7Au_p_0qiz-adYnjOCX2z24PMFk.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
 
 /* vietnamese */
 @font-face {
   font-family: 'Muli';
   font-style: normal;
   font-weight: 800;
-  src: local("Muli ExtraBold"), local("Muli-ExtraBold"), url(https://fonts.gstatic.com/s/muli/v11/7Au_p_0qiz-adZXgOCr2z24PMFk-0g.woff2) format("woff2"); }
+  src: local("Muli ExtraBold"), local("Muli-ExtraBold"), url(https://fonts.gstatic.com/s/muli/v11/7Au_p_0qiz-adZXgOCr2z24PMFk-0g.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB; }
 
 /* latin-ext */
 @font-face {
   font-family: 'Muli';
   font-style: normal;
   font-weight: 800;
-  src: local("Muli ExtraBold"), local("Muli-ExtraBold"), url(https://fonts.gstatic.com/s/muli/v11/7Au_p_0qiz-adZXgOCv2z24PMFk-0g.woff2) format("woff2"); }
+  src: local("Muli ExtraBold"), local("Muli-ExtraBold"), url(https://fonts.gstatic.com/s/muli/v11/7Au_p_0qiz-adZXgOCv2z24PMFk-0g.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF; }
 
 /* latin */
 @font-face {
   font-family: 'Muli';
   font-style: normal;
   font-weight: 800;
-  src: local("Muli ExtraBold"), local("Muli-ExtraBold"), url(https://fonts.gstatic.com/s/muli/v11/7Au_p_0qiz-adZXgOCX2z24PMFk.woff2) format("woff2"); }
+  src: local("Muli ExtraBold"), local("Muli-ExtraBold"), url(https://fonts.gstatic.com/s/muli/v11/7Au_p_0qiz-adZXgOCX2z24PMFk.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
 
 /* cyrillic-ext */
 @font-face {
   font-family: 'PT Mono';
   font-style: normal;
   font-weight: 400;
-  src: local("PT Mono"), local("PTMono-Regular"), url(https://fonts.gstatic.com/s/ptmono/v5/9oRONYoBnWILk-9AnCIzM_HxEcn7Hg.woff2) format("woff2"); }
+  src: local("PT Mono"), local("PTMono-Regular"), url(https://fonts.gstatic.com/s/ptmono/v5/9oRONYoBnWILk-9AnCIzM_HxEcn7Hg.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
 
 /* cyrillic */
 @font-face {
   font-family: 'PT Mono';
   font-style: normal;
   font-weight: 400;
-  src: local("PT Mono"), local("PTMono-Regular"), url(https://fonts.gstatic.com/s/ptmono/v5/9oRONYoBnWILk-9AnCszM_HxEcn7Hg.woff2) format("woff2"); }
+  src: local("PT Mono"), local("PTMono-Regular"), url(https://fonts.gstatic.com/s/ptmono/v5/9oRONYoBnWILk-9AnCszM_HxEcn7Hg.woff2) format("woff2");
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; }
 
 /* latin-ext */
 @font-face {
   font-family: 'PT Mono';
   font-style: normal;
   font-weight: 400;
-  src: local("PT Mono"), local("PTMono-Regular"), url(https://fonts.gstatic.com/s/ptmono/v5/9oRONYoBnWILk-9AnCEzM_HxEcn7Hg.woff2) format("woff2"); }
+  src: local("PT Mono"), local("PTMono-Regular"), url(https://fonts.gstatic.com/s/ptmono/v5/9oRONYoBnWILk-9AnCEzM_HxEcn7Hg.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF; }
 
 /* latin */
 @font-face {
   font-family: 'PT Mono';
   font-style: normal;
   font-weight: 400;
-  src: local("PT Mono"), local("PTMono-Regular"), url(https://fonts.gstatic.com/s/ptmono/v5/9oRONYoBnWILk-9AnC8zM_HxEck.woff2) format("woff2"); }
+  src: local("PT Mono"), local("PTMono-Regular"), url(https://fonts.gstatic.com/s/ptmono/v5/9oRONYoBnWILk-9AnC8zM_HxEck.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
 
 .m--0 {
   margin: 0px; }
@@ -11050,77 +11063,6 @@ a.text-dark:hover, a.text-dark:focus {
 
 .text-underline {
   text-decoration: underline; }
-
-body {
-  font-family: 'muli', -apple-system,system-ui,BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
-
-.navbar .logo {
-  width: 8rem;
-  height: 4rem; }
-
-.navbar .left-list .left-link {
-  font-size: 0.95rem;
-  color: #666666;
-  font-weight: 400;
-  margin-right: 1.25rem; }
-  .navbar .left-list .left-link:hover {
-    color: #0d2366;
-    border-bottom: 1px solid #0d2366; }
-
-@media (min-width: 1024px) {
-  .navbar .left-list .dropdown-toggle::after {
-    display: none; } }
-
-.navbar .right-list .hiring {
-  display: inline-block;
-  color: #000000;
-  font-size: 1rem;
-  position: relative; }
-  .navbar .right-list .hiring::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 0;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    height: 5px;
-    width: 5px;
-    color: #000000;
-    border: 1px solid #000000;
-    border-radius: 50%;
-    background-color: #000000; }
-
-.navbar .right-list .flag {
-  width: 1.5rem;
-  height: 1.2rem; }
-
-.banner .header .heading {
-  color: #0d2366;
-  line-height: 1.2;
-  font-weight: 800; }
-  .banner .header .heading:after {
-    content: '';
-    display: block;
-    width: 1.55rem;
-    height: 0.25rem;
-    margin: 1rem 0;
-    background: #49dab5; }
-
-.banner .header .sub-text {
-  font-size: 1.1rem;
-  line-height: 1.7;
-  margin: 0 42rem 1rem 0;
-  color: #515978; }
-
-.banner .btn-input {
-  border-color: #528ff0; }
-
-.banner .signup-form {
-  display: inline-block; }
-
-.banner .demo-btn {
-  display: inline-block; }
 
 /*!
  * animate.css -http://daneden.me/animate

@@ -2,7 +2,117 @@
 // ## HOME.SCSS ## //
 // ######################################## //
 
+// Navbar
+.navbar {
+  
+  // Logo Image
+  .logo {
+    width: 8rem;
+    height: 4rem;
+  }
+  
+  // Left list
+  .left-list {
+    
+    // left links
+    .left-link {
+      font-size: 0.95rem;
+      color: $gray-6;
+      font-weight: 400;
+      margin-right: 1.25rem;
+      
+      &:hover {
+        color: $theme-primary;
+        border-bottom: 1px solid $theme-primary;
+      }
+    }
+    
+    // Dropdown caret
+    .dropdown-toggle::after {
+      
+      // No display on desktop
+      @include desktop {
+        display: none;
+      }
+    }
+  }
+  
+  // Right list
+  .right-list {
+    
+    // Hiring
+    .hiring {
+      display: inline-block;
+      color: $black;
+      font-size: 1rem;
+      position: relative;
+      
+      &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        height: 5px;
+        width: 5px;
+        color: $black;
+        border: 1px solid $black;
+        border-radius: 50%;
+        background-color: $black;
+      }
+    }
+    
+    // Flag
+    .flag {
+      width: 1.5rem;
+      height: 1.2rem;
+    }
+  }
+}
 
-.red {
-  color: $red;
+// Home banner
+.banner {
+  
+  // header section
+  .header {
+    
+    // Heading
+    .heading {
+      color: $theme-primary;
+      line-height: 1.2;
+      font-weight: 800;
+
+      &:after {
+        content: '';
+        display: block;
+        width: 1.55rem;
+        height: 0.25rem;
+        margin: 1rem 0;
+        background: $theme-success;
+      }
+    }
+
+    // Subtext
+    .sub-text {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      margin: 0 42rem 1rem 0;
+      color: $theme-secondary;
+    }
+  }
+
+  // form button
+  .btn-input {
+    border-color: $theme-blue;
+  }
+
+  // Signup form
+  .signup-form {
+    display: inline-block;
+  }
+
+  // Demo button
+  .demo-btn {
+    display: inline-block;
+  }
 }
