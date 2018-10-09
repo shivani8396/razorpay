@@ -11052,7 +11052,15 @@ a.text-dark:hover, a.text-dark:focus {
   text-decoration: underline; }
 
 body {
-  font-family: 'muli', -apple-system,system-ui,BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+  font-family: 'muli', -apple-system,system-ui,BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #515978; }
+
+.container {
+  width: 96%;
+  position: relative;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0; }
 
 .navbar .logo {
   width: 8rem;
@@ -11073,54 +11081,175 @@ body {
 
 .navbar .right-list .hiring {
   display: inline-block;
-  color: #000000;
+  color: rgba(255, 255, 255, 0.9);
   font-size: 1rem;
-  position: relative; }
+  position: relative;
+  background: -webkit-gradient(linear, left top, left bottom, from(0), color-stop(0%, rgba(255, 255, 255, 0.11)), to(rgba(255, 255, 255, 0.03)));
+  background: -webkit-linear-gradient(0, rgba(255, 255, 255, 0.11) 0%, rgba(255, 255, 255, 0.03) 100%);
+  background: -o-linear-gradient(0, rgba(255, 255, 255, 0.11) 0%, rgba(255, 255, 255, 0.03) 100%);
+  background: linear-gradient(0, rgba(255, 255, 255, 0.11) 0%, rgba(255, 255, 255, 0.03) 100%);
+  padding: 8px 12px 8px 24px;
+  font-size: 14px;
+  border-radius: 2px;
+  margin-right: 5px; }
   .navbar .right-list .hiring::before {
     content: '';
     position: absolute;
     top: 50%;
-    left: 0;
+    left: 10px;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-    height: 5px;
-    width: 5px;
-    color: #000000;
-    border: 1px solid #000000;
+    height: 8px;
+    width: 8px;
+    color: #ffffff;
+    border: 1px solid #ffffff;
     border-radius: 50%;
-    background-color: #000000; }
+    background-color: #ffffff; }
+  .navbar .right-list .hiring:hover {
+    padding-bottom: 8px;
+    border-bottom: 2px solid #fff; }
 
 .navbar .right-list .flag {
-  width: 1.5rem;
-  height: 1.2rem; }
+  width: 2rem;
+  height: 1.1rem; }
 
-.banner .header .heading {
-  color: #0d2366;
-  line-height: 1.2;
-  font-weight: 800; }
-  .banner .header .heading:after {
+.navbar .right-list .login-text {
+  color: #ffffff;
+  margin-right: 5px; }
+
+.navbar .right-list .signup-btn {
+  border: none;
+  font-size: 15px;
+  color: #528ff0;
+  font-weight: 600;
+  padding: 9px 18px;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1); }
+  .navbar .right-list .signup-btn:hover {
+    color: #185fc0; }
+
+.banner {
+  position: relative;
+  padding: 3.5rem 0 5rem; }
+  .banner::before {
     content: '';
-    display: block;
-    width: 1.55rem;
-    height: 0.25rem;
-    margin: 1rem 0;
-    background: #49dab5; }
-
-.banner .header .sub-text {
-  font-size: 1.1rem;
-  line-height: 1.7;
-  margin: 0 42rem 1rem 0;
-  color: #515978; }
-
-.banner .btn-input {
-  border-color: #528ff0; }
-
-.banner .signup-form {
-  display: inline-block; }
-
-.banner .demo-btn {
-  display: inline-block; }
+    position: absolute;
+    top: -61%;
+    left: 90%;
+    height: 50vw;
+    width: 100vw;
+    color: #528ff0;
+    background: -webkit-linear-gradient(45deg, #185fc0, rgba(69, 151, 219, 0.5));
+    background: -o-linear-gradient(45deg, #185fc0, rgba(69, 151, 219, 0.5));
+    background: linear-gradient(45deg, #185fc0, rgba(69, 151, 219, 0.5));
+    -webkit-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: rotateZ(45deg) skewX(-15deg) skewY(-16deg);
+    -ms-transform: rotate(45deg) skewX(-15deg) skewY(-16deg);
+    transform: rotateZ(45deg) skewX(-15deg) skewY(-16deg);
+    z-index: -1;
+    border-radius: 1px;
+    -webkit-box-shadow: 1px 1px 0, 2px 2px 0, 3px 3px 0;
+    box-shadow: 1px 1px 0, 2px 2px 0, 3px 3px 0; }
+  .banner .banner-image {
+    position: absolute;
+    height: 47vw;
+    width: 40vw;
+    top: -7%;
+    right: 4%;
+    margin: 30px 0 0 -30px; }
+    .banner .banner-image .illustration {
+      content: '';
+      top: 0;
+      left: 0;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background-image: url("../images/illustration-bg.png");
+      background-repeat: no-repeat;
+      background-size: cover; }
+  .banner .header {
+    margin-bottom: 2rem; }
+    .banner .header .heading {
+      color: #0d2366;
+      line-height: 1.2;
+      font-weight: 900; }
+      .banner .header .heading:after {
+        content: '';
+        display: block;
+        width: 1.55rem;
+        height: 0.25rem;
+        margin: 1rem 0;
+        background: #49dab5; }
+    .banner .header .sub-text {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      margin: 0 42rem 0 0;
+      color: #515978; }
+  .banner .signup-form {
+    display: inline-block;
+    border: 1px solid #528ff0;
+    border-radius: 3px;
+    padding: 0 1rem;
+    -webkit-box-shadow: 0 2px 9px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 9px 1px rgba(0, 0, 0, 0.1);
+    line-height: 45px;
+    margin: 0 0.5rem 2rem 0; }
+    .banner .signup-form .email-form {
+      border: none;
+      padding-right: 4rem; }
+      .banner .signup-form .email-form::-webkit-input-placeholder {
+        color: #aaaaaa;
+        font-size: 15px; }
+    .banner .signup-form .btn-form {
+      border: none;
+      font-size: 15px;
+      color: #528ff0;
+      font-weight: 600; }
+      .banner .signup-form .btn-form .icon-form {
+        margin: 0 0 0 0.1rem; }
+  .banner .demo-btn {
+    display: inline-block;
+    border: 1px solid rgba(82, 143, 240, 0.3);
+    border-radius: 3px;
+    line-height: 45px;
+    -webkit-box-shadow: 0 2px 9px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 9px 1px rgba(0, 0, 0, 0.1); }
+    .banner .demo-btn .btn-demo {
+      font-size: 15px;
+      color: #528ff0;
+      font-weight: 600;
+      padding: 0.75rem 1rem; }
+  .banner .footer-sec {
+    font-size: 0.9rem;
+    padding-left: 1rem;
+    position: relative; }
+    .banner .footer-sec:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 1px;
+      height: 42px;
+      background-color: rgba(82, 143, 240, 0.3); }
+    .banner .footer-sec .badge {
+      text-transform: uppercase;
+      color: #ffffff;
+      background-color: #ff8a8a;
+      padding: 0.3rem;
+      border-radius: 2px; }
+    .banner .footer-sec .bold-text {
+      opacity: 0.8; }
+    .banner .footer-sec .read-text {
+      opacity: 0.9;
+      font-weight: 500;
+      text-decoration: none; }
+      .banner .footer-sec .read-text:hover, .banner .footer-sec .read-text:focus, .banner .footer-sec .read-text:active {
+        text-decoration: none;
+        color: #528ff0; }
 
 /*!
  * animate.css -http://daneden.me/animate

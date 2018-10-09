@@ -4,25 +4,27 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+  <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
+  
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/app.css">
-
+  
   <title>Razorpay</title>
 </head>
 <body>
-
+  
   <!--********************************* Navbar **********************************-->
-  <div class="container">
+  
     <nav class="navbar navbar-expand-lg">
+      <div class="container">
       <a href="#" class="navbar-brand">
         <img class="logo" src="assets/images/logo.svg" alt="Logo">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle Navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-
+      
       <div class="collapse navbar-collapse" id="navbar">
         <ul class="navbar-nav mr-auto left-list">
           <li class="nav-item dropdown left-li" active>
@@ -43,34 +45,39 @@
             <a href="" class="nav-link left-link">Resources</a>
           </li>
         </ul>
-
+        
         <ul class="navbar-nav ml-auto right-list">
           <li class="nav-item">
             <a href="" class="nav-link hiring">We're hiring!</a>
           </li>
-
+          
           <li class="nav-item">
             <a href="" class="nav-link">
               <img class="flag" src="assets/images/flag.svg" alt="">
             </a>
           </li>
-
+          
           <li class="nav-item">
-            <a href="#" class="nav-link">Log In</a>
+            <a href="#" class="nav-link login-text">Log In</a>
           </li>
-
+          
           <li class="nav-item">
             <form action="">
-              <input type="email">
-              <button class="sign-up-btn" type="submit">Sign Up <span><i class="icon ion-md-arrow-forward "></i></span></button>
+              <!-- <input type="email" class="email-navbar"> -->
+              <button class="signup-btn" type="submit">Sign Up <span><i class="icon ion-md-arrow-forward"></i></span></button>
             </form>
           </li>
         </ul>
       </div>
+    </div>
     </nav>
-
+    
     <!-- home banner-->
     <section class="banner" id="home-banner">
+      
+      <div class="banner-image">
+        <div class="illustration"></div>
+      </div>
       <div class="container">
         <div class="header">
           <h1 class="heading">The Future of <br>Payments is Here</h1>
@@ -78,26 +85,26 @@
             for businesses in India. Sign up now to simplify your business.
           </p>
         </div>
-        <form action="submit" class="btn-input signup-form">
-          <input type="email" required="" placeholder="Your email address" name="email">
-          <button class="btn-icon">Sign Up<i class="i-arrow-forward"></i></button>
+        <form action="submit" class="signup-form">
+          <input type="email" required="" placeholder="Your email address" name="email" class="email-form">
+          <button class="btn-icon btn-form">Sign Up <span class="icon-form"><i class="icon ion-md-arrow-forward"></i></span></button>
         </form>
         <div class="demo-btn">
-          <button class="btn demo-btn">View Demo</button>
+          <button class="btn btn-demo">View Demo</button>
         </div>
-        <div class="footer-text">
+        <div class="footer-sec">
           <div class="badge">New</div>
-          <span>Accept payment via</span>
-          <b>GST compliant &nbsp;</b><br>
-          <span>payable</span>
-          <b>invoices.</b>
-          <a href="#">Read More</a>
+          <span class="footer-text">Accept payments via</span>
+          <b class="bold-text">GST compliant &nbsp;</b><br>
+          <span class="footer-text">payable</span>
+          <b class="bold-text">invoices.</b>
+          <a href="#" class="read-text">Read More</a>
         </div>
       </div>
-
-    </div>
-  </div>
-
+      
+    </section>
+  
+  
   <!-- jQuery first, then Bootstrap JS -->
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/js/popper.min.js"></script>

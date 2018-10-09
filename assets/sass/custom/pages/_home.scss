@@ -2,6 +2,16 @@
 // ## HOME.SCSS ## //
 // ######################################## //
 
+
+// Container
+.container {
+  width: 96%;
+  position: relative;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0;
+}
+
 // Navbar
 .navbar {
   
@@ -43,45 +53,118 @@
     // Hiring
     .hiring {
       display: inline-block;
-      color: $black;
+      color: rgba($white, 0.9);
       font-size: 1rem;
       position: relative;
+      background: linear-gradient(0,rgba($white, 0.11) 0%,rgba($white,0.03) 100%);
+      padding: 8px 12px 8px 24px;
+      font-size: 14px;
+      border-radius: 2px;
+      margin-right: 5px;
       
       &::before {
         content: '';
         position: absolute;
         top: 50%;
-        left: 0;
+        left: 10px;
         transform: translateY(-50%);
-        height: 5px;
-        width: 5px;
-        color: $black;
-        border: 1px solid $black;
+        height: 8px;
+        width: 8px;
+        color: $white;
+        border: 1px solid $white;
         border-radius: 50%;
-        background-color: $black;
+        background-color: $white;
+      }
+
+      &:hover {
+        padding-bottom: 8px;
+        border-bottom: 2px solid #fff;
       }
     }
-    
+
     // Flag
     .flag {
-      width: 1.5rem;
-      height: 1.2rem;
+      width: 2rem;
+      height: 1.1rem;
+    }
+
+    // Login text
+    .login-text {
+      color: $white;
+      margin-right: 5px;
+    }
+
+    //Signup btn
+    .signup-btn {
+      border: none;
+      font-size: 15px;
+      color: $theme-blue;
+      font-weight: 600;
+      padding: 9px 18px;
+      border-radius: 2px;
+      box-shadow: 0 1px 4px rgba($black, 0.1);
+
+      &:hover {
+        color: $theme-primary-bg-dark;
+      }
     }
   }
 }
 
 // Home banner
 .banner {
+  position: relative;
+  padding: 3.5rem 0 5rem;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -61%;
+    left: 90%;
+    height: 50vw;
+    width: 100vw;
+    color: $theme-blue;
+    background: linear-gradient(45deg, $theme-primary-bg-dark, rgba($theme-primary-bg-light, 0.5));
+    transform-origin: 0 0;
+    transform: rotateZ(45deg) skewX(-15deg) skewY(-16deg);
+    z-index: -1;
+    border-radius: 1px;
+    box-shadow: 1px 1px 0, 2px 2px 0, 3px 3px 0;
+  }
+
+  // Bg Illustration right
+  .banner-image {
+    position: absolute;
+    height: 47vw;
+    width: 40vw;
+    top: -7%;
+    right: 4%;
+    margin: 30px 0 0 -30px;
+    
+    // Image
+    .illustration {
+      content: '';
+      top: 0;
+      left: 0;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background-image: url('../images/illustration-bg.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
   
   // header section
   .header {
+    margin-bottom: 2rem;
     
     // Heading
     .heading {
       color: $theme-primary;
       line-height: 1.2;
-      font-weight: 800;
-
+      font-weight: 900;
+      
       &:after {
         content: '';
         display: block;
@@ -91,28 +174,114 @@
         background: $theme-success;
       }
     }
-
+    
     // Subtext
     .sub-text {
       font-size: 1.1rem;
       line-height: 1.7;
-      margin: 0 42rem 1rem 0;
+      margin: 0 42rem 0 0;
       color: $theme-secondary;
     }
   }
-
-  // form button
-  .btn-input {
-    border-color: $theme-blue;
-  }
-
-  // Signup form
+  
+  // Signup form section
   .signup-form {
     display: inline-block;
+    border: 1px solid $theme-blue;
+    border-radius: 3px;
+    padding: 0 1rem;
+    box-shadow: 0 2px 9px 1px rgba($black, 0.1);
+    line-height: 45px;
+    margin: 0 0.5rem 2rem 0;
+    
+    // Email
+    .email-form {
+      border: none;
+      padding-right: 4rem;
+      
+      &::-webkit-input-placeholder {
+        color: $gray-a;
+        font-size: 15px;
+      }
+    }
+    
+    // Signup btn
+    .btn-form {
+      border: none;
+      font-size: 15px;
+      color: $theme-blue;
+      font-weight: 600;
+      
+      // Icon forward
+      .icon-form {
+        margin: 0 0 0 0.1rem;
+      }
+    }
   }
-
-  // Demo button
+  
+  // Demo button div
   .demo-btn {
     display: inline-block;
+    border: 1px solid rgba($theme-blue, 0.3);
+    border-radius: 3px;
+    line-height: 45px;
+    box-shadow: 0 2px 9px 1px rgba($black, 0.1);
+    
+    // Btn text
+    .btn-demo {
+      font-size: 15px;
+      color: $theme-blue;
+      font-weight: 600;
+      padding: 0.75rem 1rem;
+    }
+    
+  }
+  
+  // Footer section
+  .footer-sec {
+    font-size: 0.9rem;
+    padding-left: 1rem;
+    position: relative;
+    
+    &:before {
+      content: '';
+      position: absolute;
+      top:0;
+      left: 0;
+      width: 1px;
+      height: 42px;
+      background-color: rgba($theme-blue, 0.3);
+    }
+    
+    // Badge
+    .badge {
+      text-transform: uppercase;
+      color: $white;
+      background-color: $theme-info-bg;
+      padding: 0.3rem;
+      border-radius: 2px;
+    }
+    
+    // Footer text
+    .footer-text {
+      // font-size: 0.9rem;
+    }
+    
+    // Bold-text
+    .bold-text {
+      opacity: 0.8;
+    }
+    
+    // Read more link text
+    .read-text {
+      opacity: 0.9;
+      font-weight: 500;
+      text-decoration: none;
+      
+      &:hover, &:focus, &:active {
+        text-decoration: none;
+        color: $theme-blue;
+      }
+    }
   }
 }
