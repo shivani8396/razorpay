@@ -10,7 +10,7 @@ $('.add-new').click(function() {
   var num = parseInt( $formId.prop('id').match(/\d+/g), 10 ) +1;
   console.log(num);
   
-  // Clone it and assign the new ID 
+  // Clone it and assign the new ID
   var $pane = $formId.clone().prop('id', 'pane'+num);
   console.log($pane);
   
@@ -22,5 +22,14 @@ $('.add-new').click(function() {
   $('.heading', $pane).text('Person '+ num+ ' Details');
   // $formId.after($('.heading').text('Person'+num+ 'Details'));
   console.log('heading text changed');
+  
+  // Changing all input IDs dynamically
+  $('.first-name', $pane).prop('id', 'firstName'+num);
+  $('.last-name', $pane).prop('id', 'lasttName'+num);
+  $('.mail', $pane).prop('id', 'mail'+num);
+  $('.password', $pane).prop('id', 'password'+num);
+  $('.select-state', $pane).prop('id', 'inputState'+num);
+  $('.custom-file-input', $pane).prop('id', 'customFile'+num);
+  $('.form-check-input', $pane).prop('id', 'check'+num);
+  
 });
-
