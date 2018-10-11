@@ -3,16 +3,24 @@
 // ## FORMS.SCSS ## //
 // ######################################## //
 
+// form-section
 .demo-form {
   margin: 20rem 0;
   
-.form {
-  text-align: center;
-  border: 1px solid $theme-blue;
-  margin: 5rem !important;
-}
-
-.form-group {
-  margin: 2rem;
-}
+  // heading
+  .heading {
+    padding: 1rem;
+  }
+  
+  // form
+  .form {
+    text-align: center;
+    border: 1px solid $theme-blue;
+    margin: 5rem !important;
+  }
+  
+  // form-groups
+  .form-group {
+    margin: 2rem;
+  }
 }

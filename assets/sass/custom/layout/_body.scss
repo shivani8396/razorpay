@@ -5,4 +5,5 @@
 body {
   @include ff-primary;
   color: $theme-secondary;
+  overflow-x: hidden;
 }
