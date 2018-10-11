@@ -16,8 +16,8 @@
   
   <!--********************************* Navbar **********************************-->
   
-    <nav class="navbar navbar-expand-lg">
-      <div class="container">
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
       <a href="#" class="navbar-brand">
         <img class="logo" src="assets/images/logo.svg" alt="Logo">
       </a>
@@ -51,8 +51,9 @@
             <a href="" class="nav-link hiring">We're hiring!</a>
           </li>
           
-          <li class="nav-item">
-            <a href="" class="nav-link">
+          <li class="nav-item" data-container="body" data-toggle="popover" data-placement="bottom"
+          data-content="Razorpay is currently available only for Indian businesses">
+            <a class="nav-link">
               <img class="flag" src="assets/images/flag.svg" alt="">
             </a>
           </li>
@@ -70,44 +71,54 @@
         </ul>
       </div>
     </div>
-    </nav>
-    
-    <!-- home banner-->
-    <section class="banner" id="home-banner">
-      
-      <div class="banner-image">
-        <div class="illustration"></div>
+  </nav>
+
+  <!-- home banner-->
+  <section class="banner" id="home-banner">
+
+    <div class="banner-image">
+      <div class="image" style="background-image: url('./assets/images/illustration-bg.png');"></div>
+    </div>
+    <div class="container">
+      <div class="header">
+        <h1 class="heading">The Future of <br>Payments is Here</h1>
+        <p class="sub-text">The easiest way to accept, process and disburse digital payments
+          for businesses in India. Sign up now to simplify your business.
+        </p>
       </div>
-      <div class="container">
-        <div class="header">
-          <h1 class="heading">The Future of <br>Payments is Here</h1>
-          <p class="sub-text">The easiest way to accept, process and disburse digital payments
-            for businesses in India. Sign up now to simplify your business.
-          </p>
-        </div>
-        <form action="submit" class="signup-form">
-          <input type="email" required="" placeholder="Your email address" name="email" class="email-form">
-          <button class="btn-icon btn-form">Sign Up <span class="icon-form"><i class="icon ion-md-arrow-forward"></i></span></button>
-        </form>
-        <div class="demo-btn">
-          <button class="btn btn-demo">View Demo</button>
-        </div>
-        <div class="footer-sec">
-          <div class="badge">New</div>
-          <span class="footer-text">Accept payments via</span>
-          <b class="bold-text">GST compliant &nbsp;</b><br>
-          <span class="footer-text">payable</span>
-          <b class="bold-text">invoices.</b>
-          <a href="#" class="read-text">Read More</a>
-        </div>
+      <form action="submit" class="signup-form">
+        <input type="email" required="" placeholder="Your email address" name="email" class="email-form">
+        <button class="btn-icon btn-form">Sign Up <span class="icon-form"><i class="icon ion-md-arrow-forward"></i></span></button>
+      </form>
+      <div class="demo-btn">
+        <button class="btn btn-demo">View Demo</button>
       </div>
-      
-    </section>
+      <div class="footer-sec">
+        <div class="badge">New</div>
+        <span class="footer-text">Accept payments via</span>
+        <b class="bold-text">GST compliant &nbsp;</b><br>
+        <span class="footer-text">payable</span>
+        <b class="bold-text">invoices.</b>
+        <a href="#" class="read-text">Read More</a>
+      </div>
+    </div>
+    <div class="banner-footer">
+      <div class="image" style="background-image: url('./assets/images/footer-img.svg');"></div>
+    </div>
+  </section>
+
   
-  
+
   <!-- jQuery first, then Bootstrap JS -->
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/js/popper.min.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
+
+  <script>
+      $(function () {
+          $('[data-toggle="popover"]').popover();
+        });
+    </script>
+  
 </body>
 </html>

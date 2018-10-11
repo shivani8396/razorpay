@@ -11056,7 +11056,7 @@ body {
   color: #515978; }
 
 .container {
-  width: 96%;
+  width: 100%;
   position: relative;
   max-width: 1080px;
   margin: 0 auto;
@@ -11067,10 +11067,11 @@ body {
   height: 4rem; }
 
 .navbar .left-list .left-link {
-  font-size: 0.95rem;
+  font-size: 15px;
   color: #666666;
   font-weight: 400;
-  margin-right: 1.25rem; }
+  margin-right: 1.25rem;
+  padding-top: 1rem; }
   .navbar .left-list .left-link:hover {
     color: #0d2366;
     border-bottom: 1px solid #0d2366; }
@@ -11154,23 +11155,43 @@ body {
     border-radius: 1px;
     -webkit-box-shadow: 1px 1px 0, 2px 2px 0, 3px 3px 0;
     box-shadow: 1px 1px 0, 2px 2px 0, 3px 3px 0; }
+  .banner::after {
+    content: '';
+    position: absolute;
+    height: 26vw;
+    width: 23vw;
+    bottom: -45%;
+    left: 0%;
+    color: #528ff0;
+    background: -webkit-linear-gradient(45deg, rgba(24, 95, 192, 0.9), #185fc0);
+    background: -o-linear-gradient(45deg, rgba(24, 95, 192, 0.9), #185fc0);
+    background: linear-gradient(45deg, rgba(24, 95, 192, 0.9), #185fc0);
+    -webkit-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: rotateZ(46deg) skewX(-10deg) skewY(-10deg);
+    -ms-transform: rotate(46deg) skewX(-10deg) skewY(-10deg);
+    transform: rotateZ(46deg) skewX(-10deg) skewY(-10deg);
+    z-index: -1;
+    border-radius: 1px;
+    -webkit-box-shadow: 1px 1px 0, 2px 2px 0, 3px 3px 0;
+    box-shadow: 1px 1px 0, 2px 2px 0, 3px 3px 0; }
   .banner .banner-image {
     position: absolute;
     height: 47vw;
     width: 40vw;
     top: -7%;
-    right: 4%;
+    right: 5%;
     margin: 30px 0 0 -30px; }
-    .banner .banner-image .illustration {
+    .banner .banner-image .image {
       content: '';
       top: 0;
       left: 0;
       position: absolute;
       height: 100%;
       width: 100%;
-      background-image: url("../images/illustration-bg.png");
       background-repeat: no-repeat;
-      background-size: cover; }
+      background-size: contain; }
   .banner .header {
     margin-bottom: 2rem; }
     .banner .header .heading {
@@ -11236,10 +11257,11 @@ body {
       height: 42px;
       background-color: rgba(82, 143, 240, 0.3); }
     .banner .footer-sec .badge {
+      font-size: 12px;
       text-transform: uppercase;
       color: #ffffff;
       background-color: #ff8a8a;
-      padding: 0.3rem;
+      padding: 0.3rem 0.4rem;
       border-radius: 2px; }
     .banner .footer-sec .bold-text {
       opacity: 0.8; }
@@ -11250,6 +11272,35 @@ body {
       .banner .footer-sec .read-text:hover, .banner .footer-sec .read-text:focus, .banner .footer-sec .read-text:active {
         text-decoration: none;
         color: #528ff0; }
+  .banner .banner-footer {
+    position: absolute;
+    height: 10vw;
+    width: 11vw;
+    bottom: -20%;
+    left: 10%; }
+    .banner .banner-footer .image {
+      content: '';
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background-repeat: no-repeat;
+      background-size: cover; }
+
+.popover .arrow {
+  color: black;
+  opacity: 0.9; }
+  .popover .arrow::before {
+    border-bottom-color: rgba(0, 0, 0, 0.9) !important; }
+  .popover .arrow::after {
+    border-bottom-color: rgba(0, 0, 0, 0.9) !important; }
+
+.popover .popover-body {
+  font-family: 'muli', -apple-system,system-ui,BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  width: 242px;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.9);
+  border-radius: 4px; }
 
 /*!
  * animate.css -http://daneden.me/animate
