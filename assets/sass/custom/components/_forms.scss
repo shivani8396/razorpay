@@ -3,3 +3,16 @@
 // ## FORMS.SCSS ## //
 // ######################################## //
 
+.demo-form {
+  margin: 20rem 0;
+  
+.form {
+  text-align: center;
+  border: 1px solid $theme-blue;
+  margin: 5rem !important;
+}
+
+.form-group {
+  margin: 2rem;
+}
+}

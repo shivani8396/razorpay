@@ -53,72 +53,131 @@
           
           <li class="nav-item" data-container="body" data-toggle="popover" data-placement="bottom"
           data-content="Razorpay is currently available only for Indian businesses">
-            <a class="nav-link">
-              <img class="flag" src="assets/images/flag.svg" alt="">
-            </a>
-          </li>
-          
-          <li class="nav-item">
-            <a href="#" class="nav-link login-text">Log In</a>
-          </li>
-          
-          <li class="nav-item">
-            <form action="">
-              <!-- <input type="email" class="email-navbar"> -->
-              <button class="signup-btn" type="submit">Sign Up <span><i class="icon ion-md-arrow-forward"></i></span></button>
-            </form>
-          </li>
-        </ul>
-      </div>
+          <a class="nav-link">
+            <img class="flag" src="assets/images/flag.svg" alt="">
+          </a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="#" class="nav-link login-text">Log In</a>
+        </li>
+        
+        <li class="nav-item">
+          <form action="">
+            <!-- <input type="email" class="email-navbar"> -->
+            <button class="signup-btn" type="submit">Sign Up <span><i class="icon ion-md-arrow-forward"></i></span></button>
+          </form>
+        </li>
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav>
 
-  <!-- home banner-->
-  <section class="banner" id="home-banner">
-
-    <div class="banner-image">
-      <div class="image" style="background-image: url('./assets/images/illustration-bg.png');"></div>
-    </div>
-    <div class="container">
-      <div class="header">
-        <h1 class="heading">The Future of <br>Payments is Here</h1>
-        <p class="sub-text">The easiest way to accept, process and disburse digital payments
-          for businesses in India. Sign up now to simplify your business.
-        </p>
-      </div>
-      <form action="submit" class="signup-form">
-        <input type="email" required="" placeholder="Your email address" name="email" class="email-form">
-        <button class="btn-icon btn-form">Sign Up <span class="icon-form"><i class="icon ion-md-arrow-forward"></i></span></button>
-      </form>
-      <div class="demo-btn">
-        <button class="btn btn-demo">View Demo</button>
-      </div>
-      <div class="footer-sec">
-        <div class="badge">New</div>
-        <span class="footer-text">Accept payments via</span>
-        <b class="bold-text">GST compliant &nbsp;</b><br>
-        <span class="footer-text">payable</span>
-        <b class="bold-text">invoices.</b>
-        <a href="#" class="read-text">Read More</a>
-      </div>
-    </div>
-    <div class="banner-footer">
-      <div class="image" style="background-image: url('./assets/images/footer-img.svg');"></div>
-    </div>
-  </section>
-
+<!-- home banner-->
+<section class="banner" id="home-banner">
   
+  <div class="banner-image">
+    <div class="image" style="background-image: url('./assets/images/illustration-bg.png');"></div>
+  </div>
+  <div class="container">
+    <div class="header">
+      <h1 class="heading">The Future of <br>Payments is Here</h1>
+      <p class="sub-text">The easiest way to accept, process and disburse digital payments
+        for businesses in India. Sign up now to simplify your business.
+      </p>
+    </div>
+    <form action="submit" class="signup-form">
+      <input type="email" required="" placeholder="Your email address" name="email" class="email-form">
+      <button class="btn-icon btn-form">Sign Up <span class="icon-form"><i class="icon ion-md-arrow-forward"></i></span></button>
+    </form>
+    <div class="demo-btn">
+      <button class="btn btn-demo">View Demo</button>
+    </div>
+    <div class="footer-sec">
+      <div class="badge">New</div>
+      <span class="footer-text">Accept payments via</span>
+      <b class="bold-text">GST compliant &nbsp;</b><br>
+      <span class="footer-text">payable</span>
+      <b class="bold-text">invoices.</b>
+      <a href="#demoForm" class="read-text">Read More</a>
+    </div>
+  </div>
+  <div class="banner-footer">
+    <div class="image" style="background-image: url('./assets/images/footer-img.svg');"></div>
+  </div>
+</section>
 
-  <!-- jQuery first, then Bootstrap JS -->
-  <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/popper.min.js"></script>
-  <script src="assets/js/bootstrap.min.js"></script>
+<section class="demo-form" id="demoForm">
+  <form class="form">
+    <div class="pane" id="pane-1">
+      <h1 class="heading">Personal Details</h1>
+      <div class="form-row">
+        <div class="form-group col">
+          <label for="firstName">First name</label>
+          <input type="text" class="form-control" id="firstName" placeholder="First name" value="Shivani" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        <div class="form-group col">
+          <label for="lastName">Last name</label>
+          <input type="text" class="form-control" id="lastName" placeholder="Last name" value="Gupta" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        
+      </div>
+      <div class="form-row">
+        <div class="form-group col">
+          <label for="mail">Email address</label>
+          <input type="email" class="form-control" id="mail" aria-describedby="email" placeholder="Enter email">
+          <small id="email" class="form-text text-muted text-left">* We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group col">
+          <label for="password">Password</label>
+          <input type="password" class="form-control" id="password" placeholder="Password">
+        </div>
+      </div>
+      <div class="form-row">
+      <div class="form-group col">
+          <label for="inputState">State</label>
+          <select id="inputState" class="form-control">
+            <option selected>Choose...</option>
+            <option>J&K</option>
+            <option>Punjab</option>
+            <option>Haryana</option>
+          </select>
+        </div>
+        <div class="form-group col">
+        <div class="custom-file" style="margin-top: 2rem;">
+            <input type="file" class="custom-file-input" id="customFile">
+            <label class="custom-file-label" for="customFile">Choose file</label>
+          </div>
+        </div>
+      </div>
+      <div class="form-group form-check text-left">
+        <input type="checkbox" class="form-check-input" id="check">
+        <label class="form-check-label" for="check">I accept that the above stated details are all true.</label>
+      </div>
+    </div>
+    <div class="submit-form text-right" style="margin: 2rem;">
+      <button type="submit" class="btn btn-info">Add new</button>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </form>
+</section>
 
-  <script>
-      $(function () {
-          $('[data-toggle="popover"]').popover();
-        });
-    </script>
-  
+<!-- jQuery first, then Bootstrap JS -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+
+<script>
+  $(function () {
+    $('[data-toggle="popover"]').popover();
+  });
+</script>
+
 </body>
 </html>

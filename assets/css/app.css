@@ -7374,6 +7374,15 @@ a.text-dark:hover, a.text-dark:focus {
   font-weight: 400;
   src: local("PT Mono"), local("PTMono-Regular"), url(https://fonts.gstatic.com/s/ptmono/v5/9oRONYoBnWILk-9AnC8zM_HxEck.woff2) format("woff2"); }
 
+.demo-form {
+  margin: 20rem 0; }
+  .demo-form .form {
+    text-align: center;
+    border: 1px solid #528ff0;
+    margin: 5rem !important; }
+  .demo-form .form-group {
+    margin: 2rem; }
+
 .m--0 {
   margin: 0px; }
 
