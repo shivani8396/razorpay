@@ -23,20 +23,25 @@
   
   // Left list
   .left-list {
-    
+
+    // left list item
+    .left-li {
+      padding: 1.25rem 1rem 0.5rem;
+
     // left links
     .left-link {
       font-size: 15px;
       color: $gray-6;
       font-weight: 400;
-      margin-right: 1.25rem;
-      padding-top: 1rem;
-      
+      padding: 0 0 0.5rem;
+
       &:hover {
-        color: $theme-primary;
-        border-bottom: 1px solid $theme-primary;
+        font-weight: 500;
+        color: $theme-blue;
+        border-bottom: 3px solid $theme-blue;
       }
     }
+  }
     
     // Dropdown caret
     .dropdown-toggle::after {

@@ -11078,15 +11078,17 @@ body {
   width: 8rem;
   height: 4rem; }
 
-.navbar .left-list .left-link {
-  font-size: 15px;
-  color: #666666;
-  font-weight: 400;
-  margin-right: 1.25rem;
-  padding-top: 1rem; }
-  .navbar .left-list .left-link:hover {
-    color: #0d2366;
-    border-bottom: 1px solid #0d2366; }
+.navbar .left-list .left-li {
+  padding: 1.25rem 1rem 0.5rem; }
+  .navbar .left-list .left-li .left-link {
+    font-size: 15px;
+    color: #666666;
+    font-weight: 400;
+    padding: 0 0 0.5rem; }
+    .navbar .left-list .left-li .left-link:hover {
+      font-weight: 500;
+      color: #528ff0;
+      border-bottom: 3px solid #528ff0; }
 
 @media (min-width: 1024px) {
   .navbar .left-list .dropdown-toggle::after {
