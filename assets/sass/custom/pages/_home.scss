@@ -95,19 +95,80 @@
       margin-right: 5px;
     }
     
-    //Signup btn
-    .signup-btn {
-      border: none;
-      font-size: 15px;
-      color: $theme-blue;
-      font-weight: 600;
-      padding: 9px 18px;
-      border-radius: 2px;
-      box-shadow: 0 1px 4px rgba($black, 0.1);
-      background: $white;
+    // Form navbar
+    .form-navbar {
+      background: #fff;
+      border-radius: 3px;
+      height: 42px;
+      border: 1px solid rgba($black, 0.07);
+      box-shadow: 2px 4px 9px 1px rgba($black, 0.05);
+      -webkit-transition: .2s cubic-bezier(.25,.1,.25,1);
+      transition: .2s cubic-bezier(.25,.1,.25,1);
+      padding: 0 20px;
+      position: relative;
+      top: -5px;
+      font-weight: bold;
+      font-size: 16px;
+
+      &.active {
+        color: #528ff0;
+        background: #fff;
+        border-radius: 3px;
+        border: 1px solid rgba($black, 0.07);
+
+        .email-navbar {
+          width: 180px;
+          opacity: 1;
+          position: relative;
+          z-index: 1;
+          padding-left: 14px;
+          border: none;
+          outline: none;
+        }
+
+        .signup-btn {
+          border: none;
+          color: $theme-primary-bg-dark;
+          padding-right: 30px;
+        }
+      }
+
+      // Input
+      .email-navbar {
+        width: 0;
+        padding: 8px 0;
+        left: 1px;
+        margin: 0 20px 0 -20px;
+        -webkit-transition: .22s;
+        transition: .22s;
+        opacity: 0;
+        height: 36px;
+        
+        &::-webkit-input-placeholder {
+          color: $gray-a;
+          font-size: 15px;
+        }
+        
+        &:focus {
+          outline: none;
+        }
+      }
       
-      &:hover {
-        color: $theme-primary-bg-dark;
+      //Signup btn
+      .signup-btn {
+        border: none;
+        background: $white;
+        padding: 8px 16px 8px 8px;
+        margin: 0 -18px;
+        position: relative;
+        font-weight: bold;
+        color: #528ff0;
+        -webkit-transition: .2s;
+        transition: .2s;
+
+        &:hover {
+          color: $theme-primary-bg-dark;
+        }
       }
     }
   }
@@ -133,7 +194,7 @@
     border-radius: 1px;
     box-shadow: 1px 1px 0, 2px 2px 0, 3px 3px 0;
   }
-
+  
   &::after {
     content: '';
     position: absolute;
@@ -220,6 +281,10 @@
         color: $gray-a;
         font-size: 15px;
       }
+      
+      &:focus {
+        outline: none;
+      }
     }
     
     // Signup btn
@@ -229,6 +294,10 @@
       color: $theme-blue;
       font-weight: 600;
       background: $white;
+      
+      &:hover {
+        color: $theme-primary-bg-dark;
+      }
       
       // Icon forward
       .icon-form {
@@ -244,7 +313,7 @@
     border-radius: 3px;
     line-height: 45px;
     box-shadow: 0 2px 9px 1px rgba($black, 0.1);
-
+    
     &:hover {
       transform: translateY(-2px) scale(1.02);
       box-shadow: 0 6px 20px 4px rgba(0, 0, 0, 0.1);
@@ -257,7 +326,7 @@
       font-weight: 600;
       padding: 0.75rem 1rem;
       background: $white;
-
+      
       &:hover {
         color: $theme-primary-bg-dark;
       }
@@ -321,7 +390,7 @@
     width: 11vw;
     bottom: -20%;
     left: 10%;
-
+    
     // Image
     .image {
       content: '';
@@ -332,26 +401,26 @@
       background-size: cover;
     }
   }
-
+  
 }
 
 // Popover
 .popover {
-
+  
   // Arrow
   .arrow {
     color: black;
     opacity: 0.9;
-
+    
     &::before {
       border-bottom-color: rgba($black, 0.9) !important;
     }
-
+    
     &::after {
       border-bottom-color: rgba($black, 0.9) !important;
     }
   }
-
+  
   // body
   .popover-body {
     @include ff-primary;

@@ -1,6 +1,16 @@
 
+// navbar form
+$('.signup-btn').on("mouseenter", function() {
+  $('.hiring').hide();
+  $('.form-navbar').addClass('active');
+}).on("mouseleave", function(){
+  $('.hiring').show();
+  $('.form-navbar').removeClass('active');
+});
+
+// Form js
 $('.add-new').click(function() {
-  
+
   // get the last DIV which ID starts with ^= "pane"
   var $formId= $('div[id^="pane"]:last');
   console.log($formId);

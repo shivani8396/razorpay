@@ -11131,18 +11131,66 @@ body {
   color: #ffffff;
   margin-right: 5px; }
 
-.navbar .right-list .signup-btn {
-  border: none;
-  font-size: 15px;
-  color: #528ff0;
-  font-weight: 600;
-  padding: 9px 18px;
-  border-radius: 2px;
-  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
-  background: #ffffff; }
-  .navbar .right-list .signup-btn:hover {
-    color: #185fc0; }
+.navbar .right-list .form-navbar {
+  background: #fff;
+  border-radius: 3px;
+  height: 42px;
+  border: 1px solid rgba(0, 0, 0, 0.07);
+  -webkit-box-shadow: 2px 4px 9px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: 2px 4px 9px 1px rgba(0, 0, 0, 0.05);
+  -webkit-transition: 0.2s cubic-bezier(0.25, 0.1, 0.25, 1);
+  -o-transition: 0.2s cubic-bezier(0.25, 0.1, 0.25, 1);
+  transition: 0.2s cubic-bezier(0.25, 0.1, 0.25, 1);
+  padding: 0 20px;
+  position: relative;
+  top: -5px;
+  font-weight: bold;
+  font-size: 16px; }
+  .navbar .right-list .form-navbar.active {
+    color: #528ff0;
+    background: #fff;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.07); }
+    .navbar .right-list .form-navbar.active .email-navbar {
+      width: 180px;
+      opacity: 1;
+      position: relative;
+      z-index: 1;
+      padding-left: 14px;
+      border: none;
+      outline: none; }
+    .navbar .right-list .form-navbar.active .signup-btn {
+      border: none;
+      color: #185fc0;
+      padding-right: 30px; }
+  .navbar .right-list .form-navbar .email-navbar {
+    width: 0;
+    padding: 8px 0;
+    left: 1px;
+    margin: 0 20px 0 -20px;
+    -webkit-transition: .22s;
+    -o-transition: .22s;
+    transition: .22s;
+    opacity: 0;
+    height: 36px; }
+    .navbar .right-list .form-navbar .email-navbar::-webkit-input-placeholder {
+      color: #aaaaaa;
+      font-size: 15px; }
+    .navbar .right-list .form-navbar .email-navbar:focus {
+      outline: none; }
+  .navbar .right-list .form-navbar .signup-btn {
+    border: none;
+    background: #ffffff;
+    padding: 8px 16px 8px 8px;
+    margin: 0 -18px;
+    position: relative;
+    font-weight: bold;
+    color: #528ff0;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s; }
+    .navbar .right-list .form-navbar .signup-btn:hover {
+      color: #185fc0; }
 
 .banner {
   position: relative;
@@ -11238,12 +11286,16 @@ body {
       .banner .signup-form .email-form::-webkit-input-placeholder {
         color: #aaaaaa;
         font-size: 15px; }
+      .banner .signup-form .email-form:focus {
+        outline: none; }
     .banner .signup-form .btn-form {
       border: none;
       font-size: 15px;
       color: #528ff0;
       font-weight: 600;
       background: #ffffff; }
+      .banner .signup-form .btn-form:hover {
+        color: #185fc0; }
       .banner .signup-form .btn-form .icon-form {
         margin: 0 0 0 0.1rem; }
   .banner .demo-btn {
