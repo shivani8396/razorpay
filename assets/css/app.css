@@ -11139,7 +11139,8 @@ body {
   padding: 9px 18px;
   border-radius: 2px;
   -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1); }
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  background: #ffffff; }
   .navbar .right-list .signup-btn:hover {
     color: #185fc0; }
 
@@ -11241,7 +11242,8 @@ body {
       border: none;
       font-size: 15px;
       color: #528ff0;
-      font-weight: 600; }
+      font-weight: 600;
+      background: #ffffff; }
       .banner .signup-form .btn-form .icon-form {
         margin: 0 0 0 0.1rem; }
   .banner .demo-btn {
@@ -11251,11 +11253,20 @@ body {
     line-height: 45px;
     -webkit-box-shadow: 0 2px 9px 1px rgba(0, 0, 0, 0.1);
     box-shadow: 0 2px 9px 1px rgba(0, 0, 0, 0.1); }
+    .banner .demo-btn:hover {
+      -webkit-transform: translateY(-2px) scale(1.02);
+      -ms-transform: translateY(-2px) scale(1.02);
+      transform: translateY(-2px) scale(1.02);
+      -webkit-box-shadow: 0 6px 20px 4px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 6px 20px 4px rgba(0, 0, 0, 0.1); }
     .banner .demo-btn .btn-demo {
       font-size: 15px;
       color: #528ff0;
       font-weight: 600;
-      padding: 0.75rem 1rem; }
+      padding: 0.75rem 1rem;
+      background: #ffffff; }
+      .banner .demo-btn .btn-demo:hover {
+        color: #185fc0; }
   .banner .footer-sec {
     font-size: 0.9rem;
     padding-left: 1rem;
