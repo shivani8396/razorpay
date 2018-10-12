@@ -23,7 +23,8 @@ $iphone6-width: 375px;
 $tablet-width: 768px;
 $tablet-p-width: 991px;
 $desktop-width: 1024px;
-$desktop-width-lg: 1500px;
+$desktop-width-lg: 1440px;
+$desktop-width-extra-lg: 2500px;
 
 // iPhone5 Mixin
 @mixin iphone5 {
@@ -105,6 +106,13 @@ $desktop-width-lg: 1500px;
 // Large Desktops
 @mixin desktop-lg {
 	@media (min-width: #{$desktop-width-lg}) {
+		@content;
+	}
+}
+
+	// Extra-large Desktops
+@mixin desktop-extra-lg {
+	@media (min-width: #{$desktop-width-extra-lg}) {
 		@content;
 	}
 }

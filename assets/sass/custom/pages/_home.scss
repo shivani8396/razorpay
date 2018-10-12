@@ -10,6 +10,10 @@
   max-width: 1080px;
   margin: 0 auto;
   padding: 0;
+  
+  @include desktop {
+    // max-width: 960px;
+  }
 }
 
 // Navbar
@@ -214,13 +218,14 @@
     border-radius: 1px;
     box-shadow: 1px 1px 0, 2px 2px 0, 3px 3px 0;
     
+    // Large screen
     @include desktop {
-      top: -70%;
-      left: 82%;
-      height: 41vw;
+      top: -22vw;
+      left: 86%;
+      height: 50vw;
     }
   }
-  
+
   &::after {
     content: '';
     position: absolute;
@@ -235,7 +240,7 @@
     z-index: -1;
     border-radius: 1px;
     box-shadow: 1px 1px 0, 2px 2px 0, 3px 3px 0;
-
+    
     @include desktop {
       height: 17vw;
       width: 15.5vw;
@@ -289,7 +294,7 @@
         height: 0.25rem;
         margin: 1rem 0;
         background: $theme-success;
-
+        
         @include desktop {
           margin: 1rem 0 1.4rem;
         }
@@ -324,7 +329,7 @@
     .email-form {
       border: none;
       padding-right: 4rem;
-
+      
       @include desktop {
         padding-right: 2.9rem;
       }
@@ -379,7 +384,7 @@
       font-weight: 600;
       padding: 0.75rem 1rem;
       background: $white;
-
+      
       @include desktop{
         padding: 0.75rem 1.25rem;
       }

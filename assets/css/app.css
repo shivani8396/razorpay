@@ -11226,9 +11226,9 @@ body {
     box-shadow: 1px 1px 0, 2px 2px 0, 3px 3px 0; }
     @media (min-width: 1024px) {
       .banner::before {
-        top: -70%;
-        left: 82%;
-        height: 41vw; } }
+        top: -22vw;
+        left: 86%;
+        height: 50vw; } }
   .banner::after {
     content: '';
     position: absolute;
