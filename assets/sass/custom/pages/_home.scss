@@ -14,6 +14,7 @@
 
 // Navbar
 .navbar {
+  padding: 0.25rem 1rem;
   
   // Logo Image
   .logo {
@@ -23,25 +24,25 @@
   
   // Left list
   .left-list {
-
+    
     // left list item
     .left-li {
       padding: 1.25rem 1rem 0.5rem;
-
-    // left links
-    .left-link {
-      font-size: 15px;
-      color: $gray-6;
-      font-weight: 400;
-      padding: 0 0 0.5rem;
-
-      &:hover {
-        font-weight: 500;
-        color: $theme-blue;
-        border-bottom: 3px solid $theme-blue;
+      
+      // left links
+      .left-link {
+        font-size: 15px;
+        color: $gray-6;
+        font-weight: 400;
+        padding: 0 0 0.5rem;
+        
+        &:hover {
+          font-weight: 500;
+          color: $theme-blue;
+          border-bottom: 3px solid $theme-blue;
+        }
       }
     }
-  }
     
     // Dropdown caret
     .dropdown-toggle::after {
@@ -55,18 +56,27 @@
   
   // Right list
   .right-list {
+    padding: 0.75rem 0;
+    
+    // List item 
+    .nav-item {
+      padding: 0.5rem 0;
+    }
     
     // Hiring
     .hiring {
       display: inline-block;
       color: rgba($white, 0.9);
-      font-size: 1rem;
       position: relative;
       background: linear-gradient(0, rgba($white, 0.11) 0%, rgba($white,0.03) 100%);
       padding: 8px 12px 8px 24px;
       font-size: 14px;
       border-radius: 2px;
       margin-right: 5px;
+      
+      @include desktop {
+        margin: 2px 8px;
+      }
       
       &::before {
         content: '';
@@ -90,14 +100,19 @@
     
     // Flag
     .flag {
-      width: 2rem;
-      height: 1.1rem;
+      width: 28px;
+      height: 24px;
     }
     
     // Login text
     .login-text {
       color: $white;
       margin-right: 5px;
+      font-size: 15px;
+      
+      @include desktop {
+        margin-right: 8px;;
+      }
     }
     
     // Form navbar
@@ -114,13 +129,13 @@
       top: -5px;
       font-weight: bold;
       font-size: 16px;
-
+      
       &.active {
         color: #528ff0;
         background: #fff;
         border-radius: 3px;
         border: 1px solid rgba($black, 0.07);
-
+        
         .email-navbar {
           width: 180px;
           opacity: 1;
@@ -130,14 +145,14 @@
           border: none;
           outline: none;
         }
-
+        
         .signup-btn {
           border: none;
           color: $theme-primary-bg-dark;
           padding-right: 30px;
         }
       }
-
+      
       // Input
       .email-navbar {
         width: 0;
@@ -170,7 +185,7 @@
         color: #528ff0;
         -webkit-transition: .2s;
         transition: .2s;
-
+        
         &:hover {
           color: $theme-primary-bg-dark;
         }
@@ -198,6 +213,12 @@
     z-index: -1;
     border-radius: 1px;
     box-shadow: 1px 1px 0, 2px 2px 0, 3px 3px 0;
+    
+    @include desktop {
+      top: -70%;
+      left: 82%;
+      height: 41vw;
+    }
   }
   
   &::after {
@@ -214,6 +235,11 @@
     z-index: -1;
     border-radius: 1px;
     box-shadow: 1px 1px 0, 2px 2px 0, 3px 3px 0;
+
+    @include desktop {
+      height: 17vw;
+      width: 15.5vw;
+    }
   }
   
   // Bg Illustration right
@@ -224,6 +250,14 @@
     top: -7%;
     right: 5%;
     margin: 30px 0 0 -30px;
+    
+    //large screen
+    @include desktop {
+      height: 110%;
+      width: 50vw;
+      top: -6%;
+      right: -6%;
+    }
     
     // Image
     .image {
@@ -255,6 +289,10 @@
         height: 0.25rem;
         margin: 1rem 0;
         background: $theme-success;
+
+        @include desktop {
+          margin: 1rem 0 1.4rem;
+        }
       }
     }
     
@@ -264,6 +302,11 @@
       line-height: 1.7;
       margin: 0 42rem 0 0;
       color: $theme-secondary;
+      
+      @include desktop {
+        font-size: 18px;
+        line-height: 1.6;
+      }
     }
   }
   
@@ -273,7 +316,7 @@
     border: 1px solid $theme-blue;
     border-radius: 3px;
     padding: 0 1rem;
-    box-shadow: 0 2px 9px 1px rgba($black, 0.1);
+    box-shadow: 0 3px 9px 0 rgba($black, 0.1);
     line-height: 45px;
     margin: 0 0.5rem 2rem 0;
     
@@ -281,6 +324,10 @@
     .email-form {
       border: none;
       padding-right: 4rem;
+
+      @include desktop {
+        padding-right: 2.9rem;
+      }
       
       &::-webkit-input-placeholder {
         color: $gray-a;
@@ -317,9 +364,10 @@
     border: 1px solid rgba($theme-blue, 0.3);
     border-radius: 3px;
     line-height: 45px;
-    box-shadow: 0 2px 9px 1px rgba($black, 0.1);
+    box-shadow: 0 2px 16px 0px rgba($black, 0.1);
     
     &:hover {
+      transition: 0.3s;
       transform: translateY(-2px) scale(1.02);
       box-shadow: 0 6px 20px 4px rgba(0, 0, 0, 0.1);
     }
@@ -331,6 +379,10 @@
       font-weight: 600;
       padding: 0.75rem 1rem;
       background: $white;
+
+      @include desktop{
+        padding: 0.75rem 1.25rem;
+      }
       
       &:hover {
         color: $theme-primary-bg-dark;
@@ -395,6 +447,14 @@
     width: 11vw;
     bottom: -20%;
     left: 10%;
+    
+    @include desktop {
+      height: 6vw;
+      width: 7vw;
+      bottom: -21%;
+      left: 7.3%;
+      
+    }
     
     // Image
     .image {
