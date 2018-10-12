@@ -10,8 +10,9 @@ $('.signup-btn').on("mouseenter", function() {
 
 // Form js
 $('.add-new').click(function() {
+  event.preventDefault();
 
-  // get the last DIV which ID starts with ^= "pane"
+  // get the last DIV whose ID starts with ^= "pane"
   var $formId= $('div[id^="pane"]:last');
   console.log($formId);
   
