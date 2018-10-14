@@ -8,6 +8,11 @@ $('.form-navbar').on("mouseenter", function() {
   $(this).removeClass('active');
 });
 
+//popover
+$(function () {
+  $('[data-toggle="popover"]').popover();
+});
+
 // Form js
 $('.add-new').click(function() {
   event.preventDefault();
