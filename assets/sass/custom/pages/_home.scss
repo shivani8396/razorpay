@@ -652,7 +652,7 @@
       transform: skewY(-8deg);
       top: 0;
       
-      @include desktop {
+      @include desktop-lg {
         width: 100%;
         height: 75%;
         position: absolute;
@@ -668,15 +668,15 @@
     .bg-dark-after {
       background: linear-gradient(to bottom left, rgba($theme-primary-bg-light, 1) 0%, rgba($theme-primary-bg-dark, 1) 100%);
       background: $theme-primary-bg-dark;
-      width: 1500px;
-      height: 450px;
+      width: 100%;
+      height: 100%;
       position: absolute;
-      transform: skewY(5deg) skewX(-30deg);
-      bottom: -65px;
-      left: -160px;
+      transform: rotateZ(3deg) skewY(0deg) skewX(-30deg);
+      bottom: -12%;
+      left: 11%;
       z-index: -1;
       
-      @include desktop {
+      @include desktop-lg {
         width: 100%;
         height: 100%;
         position: absolute;
@@ -747,10 +747,23 @@
   // client section
   &.client-sec {
     position: relative;
-    z-index: -2;
-    padding: 9rem 0;
+    top: -50px;
+    z-index: 0;
+    padding: 14rem 0 9rem;
     background: rgba($theme-blue, 0.08);
     
+    //Columns 
+    .columns {
+      display: flex;
+      flex-wrap: wrap;
+
+      //column
+      .column {
+        display: block;
+        flex: 1 1 0;
+        max-width: 100%;
+      }
+    }
     // header section
     .sec-header {
       
@@ -768,6 +781,21 @@
       .sub-text {
         display: block;
         max-width: 465px;
+      }
+    }
+  }
+
+  // Testimonial section
+  &.testimonial-sec {
+
+    // header
+    .sec-header {
+
+      // heading 
+      .text-heading {
+        max-width: 350px;
+        margin: 0 auto;
+        line-height: 1.4;
       }
     }
   }

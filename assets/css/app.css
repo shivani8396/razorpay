@@ -11537,7 +11537,7 @@ body {
     -ms-transform: skewY(-8deg);
     transform: skewY(-8deg);
     top: 0; }
-    @media (min-width: 1024px) {
+    @media (min-width: 1440px) {
       .dark-sec.feature-sec .bg-dark-before {
         width: 100%;
         height: 75%;
@@ -11553,16 +11553,16 @@ body {
     background: -o-linear-gradient(top right, #4597db 0%, #185fc0 100%);
     background: linear-gradient(to bottom left, #4597db 0%, #185fc0 100%);
     background: #185fc0;
-    width: 1500px;
-    height: 450px;
+    width: 100%;
+    height: 100%;
     position: absolute;
-    -webkit-transform: skewY(5deg) skewX(-30deg);
-    -ms-transform: skewY(5deg) skewX(-30deg);
-    transform: skewY(5deg) skewX(-30deg);
-    bottom: -65px;
-    left: -160px;
+    -webkit-transform: rotateZ(3deg) skewY(0deg) skewX(-30deg);
+    -ms-transform: rotate(3deg) skewY(0deg) skewX(-30deg);
+    transform: rotateZ(3deg) skewY(0deg) skewX(-30deg);
+    bottom: -12%;
+    left: 11%;
     z-index: -1; }
-    @media (min-width: 1024px) {
+    @media (min-width: 1440px) {
       .dark-sec.feature-sec .bg-dark-after {
         width: 100%;
         height: 100%;
@@ -11604,9 +11604,22 @@ body {
 
 .dark-sec.client-sec {
   position: relative;
-  z-index: -2;
-  padding: 9rem 0;
+  top: -50px;
+  z-index: 0;
+  padding: 14rem 0 9rem;
   background: rgba(82, 143, 240, 0.08); }
+  .dark-sec.client-sec .columns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .dark-sec.client-sec .columns .column {
+      display: block;
+      -webkit-box-flex: 1;
+      -ms-flex: 1 1 0px;
+      flex: 1 1 0;
+      max-width: 100%; }
   .dark-sec.client-sec .sec-header .text-heading {
     max-width: 450px;
     line-height: 1.5; }
@@ -11615,6 +11628,11 @@ body {
   .dark-sec.client-sec .sec-header .sub-text {
     display: block;
     max-width: 465px; }
+
+.dark-sec.testimonial-sec .sec-header .text-heading {
+  max-width: 350px;
+  margin: 0 auto;
+  line-height: 1.4; }
 
 /*!
  * animate.css -http://daneden.me/animate
