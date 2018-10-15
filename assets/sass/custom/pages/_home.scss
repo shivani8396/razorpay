@@ -630,7 +630,7 @@
     position: relative;
     z-index: 1;
     padding: 6rem 0 0;
-
+    
     &:before {
       content: '';
       position: absolute;
@@ -651,6 +651,17 @@
       z-index: 0;
       transform: skewY(-8deg);
       top: 0;
+      
+      @include desktop {
+        width: 100%;
+        height: 75%;
+        position: absolute;
+        z-index: 0;
+        -webkit-transform: skewY(-8deg);
+        -ms-transform: skewY(-8deg);
+        transform: skewY(-8deg);
+        top: 30px;
+      }
     }
     
     // background-sec
@@ -664,6 +675,18 @@
       bottom: -65px;
       left: -160px;
       z-index: -1;
+      
+      @include desktop {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        -webkit-transform: skewY(5deg) skewX(-30deg);
+        -ms-transform: skewY(5deg) skewX(-30deg);
+        transform: rotateZ(3deg) skewY(0deg) skewX(-45deg);
+        bottom: -15%;
+        left: 13%;
+        z-index: -1;
+      }
     }
     
     
@@ -727,7 +750,7 @@
     z-index: -2;
     padding: 9rem 0;
     background: rgba($theme-blue, 0.08);
-
+    
     // header section
     .sec-header {
       
@@ -740,7 +763,7 @@
           margin: 1rem 0 1.5rem;
         }
       }
-
+      
       // subtext
       .sub-text {
         display: block;
