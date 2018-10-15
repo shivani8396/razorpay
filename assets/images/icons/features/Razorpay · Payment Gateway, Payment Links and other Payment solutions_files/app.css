@@ -11412,46 +11412,29 @@ body {
 .dark-sec.feature-sec {
   margin: 5rem 0 0;
   color: #ffffff !important;
-  position: relative;
-  padding: 6rem 0 0; }
+  position: relative; }
   .dark-sec.feature-sec .bg-dark-before {
-    background: -webkit-gradient(linear, right top, left bottom, from(#4597db), color-stop(50%, #185fc0), to(#185fc0));
-    background: -webkit-linear-gradient(top right, #4597db 0%, #185fc0 50%, #185fc0 100%);
-    background: -o-linear-gradient(top right, #4597db 0%, #185fc0 50%, #185fc0 100%);
-    background: linear-gradient(to bottom left, #4597db 0%, #185fc0 50%, #185fc0 100%);
+    background: -webkit-gradient(linear, right top, left top, from(#4597db), to(#185fc0));
+    background: -webkit-linear-gradient(right, #4597db 0%, #185fc0 100%);
+    background: -o-linear-gradient(right, #4597db 0%, #185fc0 100%);
+    background: linear-gradient(to left, #4597db 0%, #185fc0 100%);
     width: 1500px;
-    height: 670px;
+    height: 743px;
     position: absolute;
-    -webkit-transform: skewY(-8deg);
-    -ms-transform: skewY(-8deg);
-    transform: skewY(-8deg);
-    top: 0; }
-    .dark-sec.feature-sec .bg-dark-before:before {
-      content: '';
-      position: absolute;
-      top: -145px;
-      left: -90px;
-      width: 500px;
-      height: 500px;
-      opacity: 0.08;
-      -webkit-transform: rotate(30deg) skewX(-19deg) skewY(-11deg);
-      -ms-transform: rotate(30deg) skewX(-19deg) skewY(-11deg);
-      transform: rotate(30deg) skewX(-19deg) skewY(-11deg);
-      background: #528ff0; }
+    -webkit-transform: skewY(-5deg);
+    -ms-transform: skewY(-5deg);
+    transform: skewY(-5deg);
+    top: -10px; }
   .dark-sec.feature-sec .bg-dark-after {
-    background: -webkit-gradient(linear, right top, left bottom, from(#4597db), to(#185fc0));
-    background: -webkit-linear-gradient(top right, #4597db 0%, #185fc0 100%);
-    background: -o-linear-gradient(top right, #4597db 0%, #185fc0 100%);
-    background: linear-gradient(to bottom left, #4597db 0%, #185fc0 100%);
     background: #185fc0;
-    width: 1500px;
-    height: 450px;
+    width: 1400px;
+    height: 247px;
     position: absolute;
-    -webkit-transform: skewY(5deg) skewX(-30deg);
-    -ms-transform: skewY(5deg) skewX(-30deg);
-    transform: skewY(5deg) skewX(-30deg);
-    bottom: -76px;
-    left: -160px;
+    -webkit-transform: skewY(5deg) skewX(-24deg);
+    -ms-transform: skewY(5deg) skewX(-24deg);
+    transform: skewY(5deg) skewX(-24deg);
+    bottom: -257px;
+    left: -140px;
     z-index: -1; }
   .dark-sec.feature-sec .sec-header .text-heading {
     color: #ffffff; }
@@ -11466,21 +11449,19 @@ body {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between; }
-    .dark-sec.feature-sec .sec-body .columns-sec .column {
-      margin: 0 0 2.5rem; }
-      .dark-sec.feature-sec .sec-body .columns-sec .column .icon-feature {
-        width: 50px;
-        height: 50px;
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center; }
-      .dark-sec.feature-sec .sec-body .columns-sec .column .title {
-        font-size: 18px;
-        font-weight: 600;
-        margin: 1rem 0 0.75rem; }
-      .dark-sec.feature-sec .sec-body .columns-sec .column .feature-text {
-        max-width: 230px;
-        line-height: 1.8; }
+    .dark-sec.feature-sec .sec-body .columns-sec .column .icon-feature {
+      width: 50px;
+      height: 50px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center; }
+    .dark-sec.feature-sec .sec-body .columns-sec .column .title {
+      font-size: 18px;
+      font-weight: 600;
+      margin: 1rem 0 0.75rem; }
+    .dark-sec.feature-sec .sec-body .columns-sec .column .feature-text {
+      max-width: 250px;
+      line-height: 1.8; }
 
 .dark-sec .sec-header.center {
   text-align: center;
@@ -11578,7 +11559,7 @@ body {
       .dark-sec .sec-body .columns .cards .footer .link {
         color: #528ff0;
         font-weight: 700;
-        font-size: 16px; }
+        font-size: 17px; }
 
 /*!
  * animate.css -http://daneden.me/animate
