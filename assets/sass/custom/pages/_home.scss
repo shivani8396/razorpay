@@ -479,34 +479,178 @@
 
 // 3 & 4 section
 .dark-sec {
+  // Section header
+  .sec-header {
+    
+    &.center {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    // heading
+    .text-heading {
+      color: $theme-primary;
+      line-height: 1.2;
+      font-weight: 900;
+      font-size: 1.5rem;
+      
+      &:after {
+        content: '';
+        display: block;
+        width: 1.55rem;
+        height: 0.25rem;
+        margin: 1rem auto;
+        background: $theme-success;
+      }
+    }
+    
+    // Sub-text
+    .sub-text {
+      display: inline-block;
+      max-width: 430px;
+      line-height: 25px;
+    }
+  }
+  
+  // More section
+  &.more-sec {
+    
+    // Section body
+    .sec-body {
+      margin-top: 2rem;
+      
+      // section of columns
+      .columns {
+        display: flex;
+        flex-wrap: wrap;
+        border-image: radial-gradient(rgba($black, 0.2), transparent) .5;
+        
+        &:first-child{
+          // first row cells
+          .column {
+            border-bottom: 2px solid;
+          }
+        }
+        
+        // Card
+        .cards {
+          display: block;
+          flex: 1 1 0;
+          max-width: 100%;
+          position: relative;
+          height: 270px;
+          border-image: radial-gradient(rgba($black, 0.2), transparent) .5;
+          padding: 12px;
+          
+          &:first-child {
+            border-right: 2px solid;
+          }
+          
+          &:last-child {
+            border-left: 2px solid;
+          }
+          
+          // Background image
+          .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: 40%;
+            background-position: right bottom;
+            box-shadow: 5px 7px 10px 0 rgba($theme-primary-bg-light, 0.06);
+            border: none($black, 0.04);
+            transition: 0.5s;
+            transform-origin: center;
+            opacity: 0;
+            
+            &:hover {
+              position: absolute;
+              z-index: 2;
+              opacity: 1;
+              background-color: rgba($theme-primary-bg-light, 0.1);
+              transform: scale(1.2, 1.2);
+            }
+          }
+          
+          // header
+          .header {
+            
+            // image-icon
+            .image-icon {
+              width: 3rem;
+              height: 3rem;
+            }
+            
+            // title
+            .title {
+              color: $theme-primary;
+              line-height: 28px;
+              font-weight: 600;
+              font-size: 1rem;
+              margin: 1rem 0;
+            }
+          }
+          
+          // Body
+          .body {
+            
+            // text
+            .text {
+              color: lighten($theme-secondary, 15%);
+              width: 300px;
+              text-align: center;
+              margin: 1rem auto;
+            }
+          }
+          
+          // footer
+          .footer {
+            
+            // link
+            .link {
+              color: $theme-blue;
+              font-weight: 700;
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+    
+  }
   
   //feature section
   &.feature-sec {
     margin: 5rem 0 0;
     color: $white !important;
     position: relative;
+    z-index: 1;
     padding: 6rem 0 0;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: -30px;
+      left: 10px;
+      width: 650px;
+      height: 350px;
+      transform: rotate(30deg) skewX(-15deg) skewY(-20deg);
+      background: rgba($theme-blue, 0.08);
+    }
     
     // background-sec
     .bg-dark-before {
       background: linear-gradient(to bottom left, rgba($theme-primary-bg-light, 1) 0%, rgba($theme-primary-bg-dark, 1) 50%, rgba($theme-primary-bg-dark, 1) 100%);
-      width: 1500px;
+      width: 100%;
       height: 670px;
       position: absolute;
+      z-index: 0;
       transform: skewY(-8deg);
       top: 0;
-      
-      &:before {
-        content: '';
-        position: absolute;
-        top: -145px;
-        left: -90px;
-        width: 500px;
-        height: 500px;
-        opacity: 0.08;
-        transform: rotate(30deg) skewX(-19deg) skewY(-11deg);
-        background: $theme-blue;
-      }
     }
     
     // background-sec
@@ -517,10 +661,11 @@
       height: 450px;
       position: absolute;
       transform: skewY(5deg) skewX(-30deg);
-      bottom: -76px;
+      bottom: -65px;
       left: -160px;
       z-index: -1;
     }
+    
     
     // header section
     .sec-header {
@@ -547,7 +692,7 @@
         
         // Column
         .column {
-          margin: 0 0 2.5rem;
+          margin: 2.5rem 0 0;
           
           // Icon
           .icon-feature {
@@ -575,141 +720,31 @@
       
     }
   }
-  // More header
-  .sec-header {
-    
-    &.center {
-      text-align: center;
-      margin-left: auto;
-      margin-right: auto;
-    }
-  }
   
-  // heading
-  .text-heading {
-    color: $theme-primary;
-    line-height: 1.2;
-    font-weight: 900;
-    font-size: 1.5rem;
-    
-    &:after {
-      content: '';
-      display: block;
-      width: 1.55rem;
-      height: 0.25rem;
-      margin: 1rem auto;
-      background: $theme-success;
-    }
-  }
-  
-  // Sub-text
-  .sub-text {
-    max-width: 430px;
-    margin: 0 auto;
-    line-height: 25px;
-  }
-  
-  // Section body
-  .sec-body {
-    margin-top: 2rem;
-    
-    // section of columns
-    .columns {
-      display: flex;
-      flex-wrap: wrap;
-      border-image: radial-gradient(rgba($black, 0.2), transparent) .5;
+  // client section
+  &.client-sec {
+    position: relative;
+    z-index: -2;
+    padding: 9rem 0;
+    background: rgba($theme-blue, 0.08);
+
+    // header section
+    .sec-header {
       
-      &:first-child{
-        // first row cells
-        .column {
-          border-bottom: 2px solid;
+      // heading
+      .text-heading {
+        max-width: 450px;
+        line-height: 1.5;
+        
+        &:after {
+          margin: 1rem 0 1.5rem;
         }
       }
-      
-      // Card
-      .cards {
+
+      // subtext
+      .sub-text {
         display: block;
-        flex: 1 1 0;
-        max-width: 100%;
-        position: relative;
-        height: 270px;
-        border-image: radial-gradient(rgba($black, 0.2), transparent) .5;
-        padding: 12px;
-        
-        &:first-child {
-          border-right: 2px solid;
-        }
-        
-        &:last-child {
-          border-left: 2px solid;
-        }
-        
-        // Background image
-        .background {
-          position: absolute;
-          top: 0;
-          left: 0;
-          height: 100%;
-          width: 100%;
-          background-repeat: no-repeat;
-          background-size: 40%;
-          background-position: right bottom;
-          box-shadow: 5px 7px 10px 0 rgba($theme-primary-bg-light, 0.06);
-          border: none($black, 0.04);
-          transition: 0.5s;
-          transform-origin: center;
-          opacity: 0;
-          
-          &:hover {
-            position: absolute;
-            z-index: 2;
-            opacity: 1;
-            background-color: rgba($theme-primary-bg-light, 0.1);
-            transform: scale(1.2, 1.2);
-          }
-        }
-        
-        // header
-        .header {
-          
-          // image-icon
-          .image-icon {
-            width: 3rem;
-            height: 3rem;
-          }
-          
-          // title
-          .title {
-            color: $theme-primary;
-            line-height: 28px;
-            font-weight: 600;
-            font-size: 1rem;
-            margin: 1rem 0;
-          }
-        }
-        
-        // Body
-        .body {
-          
-          // text
-          .text {
-            color: lighten($theme-secondary, 15%);
-            width: 300px;
-            text-align: center;
-            margin: 1rem auto;
-          }
-        }
-        
-        // footer
-        .footer {
-          
-          // link
-          .link {
-            color: $theme-blue;
-            font-weight: 700;
-            font-size: 16px;
-          }
-        }
+        max-width: 465px;
       }
     }
   }
