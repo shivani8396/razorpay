@@ -4,13 +4,15 @@
 
 // testimonial flickity carousel
 
+
 // flickity button
 .flickity-button {
   position: relative;
-  border: 1px solid $theme-blue;
+  border: 1px solid rgba($theme-blue, 0.3);
   margin: 0 2rem;
   transform: translate(1170%, 50%);
-  box-shadow: 1px 1px 4px 2px rgba($black, 0.1);
+  transition: 0.2s opacity;
+  box-shadow: 0 1px 4px 0 rgba($black, 0.1);
   
   //prev next button
   &.flickity-prev-next-buttton {
@@ -45,4 +47,10 @@
     &.next {
       right: 0;
     }
+  }
+
+  // disabled button
+  .flickity-button:disabled {
+    opacity: 0;
+    transition: 0.2s opacity;
   }

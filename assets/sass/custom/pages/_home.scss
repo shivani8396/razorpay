@@ -788,6 +788,11 @@
   // Testimonial section
   &.testimonial-sec {
     
+    // width
+    #testimonial {
+      max-width: 100vw;
+    }
+    
     // header
     .sec-header {
       
@@ -804,42 +809,21 @@
       
       // carousel section
       .testimonial-carousel {
-        margin: 3rem 0;
-        
-        // bg sec
-        .bg {
-          position: absolute;
-          top: 0;
-          bottom: 0;
-          width: calc(25vw - 12px);
-          pointer-events: none;
-          // -webkit-transition: .5s opacity;
-          // transition: .5s opacity;
-          
-          // left white sec
-          &.left {
-            left: 0;
-            background: linear-gradient(to right, rgba($white, 1) 20%, rgba($white, 0.2));
-            
-          }
-          
-          //right white sec
-          &.right {
-            
-          }
-        }
+        width: 100vw;
+        margin: 3rem 0;  
         
         //carousel cell
         .carousel-cell {
           padding: 0 15px;
+          display: inline-block;
           
           // cell-text
           .cell-text {
-            width: calc(50vw - 24px);
+            width: calc(50vw - 30px);
             height: 350px;
             background: $white;
             border: 1px solid rgba($black, 0.05);
-            box-shadow: 2px 4px 6px 1px rgba($black, 0.05), 0 1px 1px rgba($black, 0.04);
+            box-shadow: 2px 4px 10px 1px rgba($black, 0.05), 0 1px 1px rgba($black, 0.04);
             white-space: normal;
             padding: 30px;
             overflow-y: auto;
@@ -900,7 +884,147 @@
           }
         }
       }
+      
+      // bg sec
+      .bg {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: calc(25vw - 30px);
+        -webkit-transition: 0.5s opacity;
+        transition: 0.5s opacity;
+        
+        // left white sec
+        &.left {
+          left: 0;
+          background: linear-gradient(to right, rgba($white, 1) 20%, rgba($white, 0.2));
+          
+          &:hover {
+            opacity: 0;
+          }
+        }
+        
+        //right white sec
+        &.right {
+          right: 0;
+          background: linear-gradient(to left, rgba($white, 1) 20%, rgba($white, 0.2));
+          
+          &:hover {
+            opacity: 0;
+          }
+        }
+      }
     }
+  }
+  
+  // contact section
+  &.contact-sec {
+    background: $theme-blue;
+    padding: 8rem 0;
+    
+    // header section
+    .sec-header {
+      
+      // heading
+      .text-heading {
+        color: $white;
+        
+        &:after {
+          background: #ff6b97;
+          margin: 1rem 0;
+        }
+      }
+      
+      // subtext
+      .sub-text {
+        color: $white;
+        max-width: 450px;
+        margin: 0.4rem 0 1.5rem;
+      }
+      
+    }
+    
+    // sec body
+    .sec-body {
+      
+      // feature list
+      .feature-list {
+        display: flex;
+        
+        // list item
+        .li {
+          margin-right: 2rem;
+
+          // icon
+          .icon {
+            color: $theme-checkmark;
+            font-weight: 600;
+            margin-right: 1rem;
+            -webkit-text-stroke: 1px $theme-checkmark;
+          }
+          
+          // text
+          .text {
+            color: $white;
+          }
+        }
+      }
+      
+      // Form contact
+      .form-contact {
+        width: 310px;
+        background: #fff;
+        border-radius: 3px;
+        height: 42px;
+        border: 1px solid rgba($black, 0.07);
+        box-shadow: 2px 4px 9px 1px rgba($black, 0.05);
+        -webkit-transition: .2s cubic-bezier(.25,.1,.25,1);
+        transition: .2s cubic-bezier(.25,.1,.25,1);
+        padding: 0 0 0 20px;
+        position: relative;
+        font-weight: bold;
+        font-size: 16px;
+        margin: 20px 0;
+        
+        // Input
+        .email-contact {
+          width: 180px;
+          padding: 8px 0;
+          left: 1px;
+          -webkit-transition: .22s;
+          transition: .22s;
+          opacity: 1;
+          height: 36px;
+          border: none;
+          
+          &::-webkit-input-placeholder {
+            color: $gray-a;
+            font-size: 15px;
+          }
+          
+          &:focus {
+            outline: none;
+            border: none;
+          }
+        }
+        
+        //Signup btn
+        .signup-btn {
+          border: none;
+          background: $white;
+          padding: 8px;
+          font-weight: bold;
+          color: #528ff0;
+          -webkit-transition: .2s;
+          transition: .2s;
+          
+          &:hover {
+            color: $theme-primary-bg-dark;
+          }
+        }
+      }
+    }
+    
   }
   
 }

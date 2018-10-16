@@ -54,6 +54,5 @@ $('.add-new').click(function() {
 $('.testimonial-carousel').flickity({
   // options
   cellAlign: 'center',
-  contain: true,
   pageDots: false
 });
