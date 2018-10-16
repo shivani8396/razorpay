@@ -689,7 +689,6 @@
       }
     }
     
-    
     // header section
     .sec-header {
       
@@ -888,9 +887,10 @@
       // bg sec
       .bg {
         position: absolute;
-        top: 0;
+        top: 25%;
         bottom: 0;
         width: calc(25vw - 30px);
+        height: 350px;
         -webkit-transition: 0.5s opacity;
         transition: 0.5s opacity;
         
@@ -919,8 +919,52 @@
   
   // contact section
   &.contact-sec {
-    background: $theme-blue;
     padding: 8rem 0;
+    position: relative;
+    
+    &:before {
+      content: '';
+      position: absolute;
+      top: 25%;
+      right: -20%;
+      width: 100%;
+      height: 100%;
+      transform: rotate(-3deg) skewX(45deg) skewY(-5deg);
+      background: rgba($theme-blue, 0.08);
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 2%;
+      right: 7%;
+      width: 270px;
+      height: 270px;
+      background: url('../images/contact-after.svg') no-repeat;
+      background-size: contain;
+    }
+    
+    // background-sec
+    .bg-dark-before {
+      background: linear-gradient(to right, rgba($theme-primary-bg-dark, 1) 20%, rgba($theme-primary-bg-light, 0.6) 100%);
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      transform: skewY(10deg) skewX(0deg);
+      top: 17%;
+      left: 0;
+      z-index: 0;
+      
+      @include desktop-lg {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        transform: skewY(10deg) skewX(0deg);
+        top: 15%;
+        left: 0;
+        z-index: 0;
+      }
+    }
     
     // header section
     .sec-header {
@@ -954,7 +998,7 @@
         // list item
         .li {
           margin-right: 2rem;
-
+          
           // icon
           .icon {
             color: $theme-checkmark;

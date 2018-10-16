@@ -11729,9 +11729,10 @@ body {
 
 .dark-sec.testimonial-sec .sec-body .bg {
   position: absolute;
-  top: 0;
+  top: 25%;
   bottom: 0;
   width: calc(25vw - 30px);
+  height: 350px;
   -webkit-transition: 0.5s opacity;
   -o-transition: 0.5s opacity;
   transition: 0.5s opacity; }
@@ -11753,8 +11754,53 @@ body {
       opacity: 0; }
 
 .dark-sec.contact-sec {
-  background: #528ff0;
-  padding: 8rem 0; }
+  padding: 8rem 0;
+  position: relative; }
+  .dark-sec.contact-sec:before {
+    content: '';
+    position: absolute;
+    top: 25%;
+    right: -20%;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: rotate(-3deg) skewX(45deg) skewY(-5deg);
+    -ms-transform: rotate(-3deg) skewX(45deg) skewY(-5deg);
+    transform: rotate(-3deg) skewX(45deg) skewY(-5deg);
+    background: rgba(82, 143, 240, 0.08); }
+  .dark-sec.contact-sec:after {
+    content: '';
+    position: absolute;
+    bottom: 2%;
+    right: 7%;
+    width: 270px;
+    height: 270px;
+    background: url("../images/contact-after.svg") no-repeat;
+    background-size: contain; }
+  .dark-sec.contact-sec .bg-dark-before {
+    background: -webkit-gradient(linear, left top, right top, color-stop(20%, #185fc0), to(rgba(69, 151, 219, 0.6)));
+    background: -webkit-linear-gradient(left, #185fc0 20%, rgba(69, 151, 219, 0.6) 100%);
+    background: -o-linear-gradient(left, #185fc0 20%, rgba(69, 151, 219, 0.6) 100%);
+    background: linear-gradient(to right, #185fc0 20%, rgba(69, 151, 219, 0.6) 100%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    -webkit-transform: skewY(10deg) skewX(0deg);
+    -ms-transform: skewY(10deg) skewX(0deg);
+    transform: skewY(10deg) skewX(0deg);
+    top: 17%;
+    left: 0;
+    z-index: 0; }
+    @media (min-width: 1440px) {
+      .dark-sec.contact-sec .bg-dark-before {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        -webkit-transform: skewY(10deg) skewX(0deg);
+        -ms-transform: skewY(10deg) skewX(0deg);
+        transform: skewY(10deg) skewX(0deg);
+        top: 15%;
+        left: 0;
+        z-index: 0; } }
   .dark-sec.contact-sec .sec-header .text-heading {
     color: #ffffff; }
     .dark-sec.contact-sec .sec-header .text-heading:after {
