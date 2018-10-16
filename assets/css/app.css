@@ -7374,6 +7374,35 @@ a.text-dark:hover, a.text-dark:focus {
   font-weight: 400;
   src: local("PT Mono"), local("PTMono-Regular"), url(https://fonts.gstatic.com/s/ptmono/v5/9oRONYoBnWILk-9AnC8zM_HxEck.woff2) format("woff2"); }
 
+.flickity-button {
+  position: relative;
+  border: 1px solid #528ff0;
+  margin: 0 2rem;
+  -webkit-transform: translate(1170%, 50%);
+  -ms-transform: translate(1170%, 50%);
+  transform: translate(1170%, 50%);
+  -webkit-box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.1); }
+  .flickity-button.flickity-prev-next-buttton.previous {
+    left: 0 !important; }
+  .flickity-button.flickity-prev-next-buttton.next {
+    right: 0; }
+  .flickity-button .flickity-button-icon {
+    fill: #528ff0;
+    top: 20%;
+    left: 18%;
+    width: 40%;
+    height: 60%;
+    -webkit-transform: translate(25%, 0%);
+    -ms-transform: translate(25%, 0%);
+    transform: translate(25%, 0%); }
+
+.flickity-prev-next-buttton.previous {
+  left: 0 !important; }
+
+.flickity-prev-next-buttton.next {
+  right: 0; }
+
 .demo-form {
   margin: 20rem 0; }
   .demo-form .heading {
@@ -11633,6 +11662,68 @@ body {
   max-width: 350px;
   margin: 0 auto;
   line-height: 1.4; }
+
+.dark-sec.testimonial-sec .sec-body .testimonial-carousel {
+  margin: 3rem 0; }
+  .dark-sec.testimonial-sec .sec-body .testimonial-carousel .bg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: calc(25vw - 12px);
+    pointer-events: none; }
+    .dark-sec.testimonial-sec .sec-body .testimonial-carousel .bg.left {
+      left: 0;
+      background: -webkit-gradient(linear, left top, right top, color-stop(20%, white), to(rgba(255, 255, 255, 0.2)));
+      background: -webkit-linear-gradient(left, white 20%, rgba(255, 255, 255, 0.2));
+      background: -o-linear-gradient(left, white 20%, rgba(255, 255, 255, 0.2));
+      background: linear-gradient(to right, white 20%, rgba(255, 255, 255, 0.2)); }
+  .dark-sec.testimonial-sec .sec-body .testimonial-carousel .carousel-cell {
+    padding: 0 15px; }
+    .dark-sec.testimonial-sec .sec-body .testimonial-carousel .carousel-cell .cell-text {
+      width: calc(50vw - 24px);
+      height: 350px;
+      background: #ffffff;
+      border: 1px solid rgba(0, 0, 0, 0.05);
+      -webkit-box-shadow: 2px 4px 6px 1px rgba(0, 0, 0, 0.05), 0 1px 1px rgba(0, 0, 0, 0.04);
+      box-shadow: 2px 4px 6px 1px rgba(0, 0, 0, 0.05), 0 1px 1px rgba(0, 0, 0, 0.04);
+      white-space: normal;
+      padding: 30px;
+      overflow-y: auto; }
+      .dark-sec.testimonial-sec .sec-body .testimonial-carousel .carousel-cell .cell-text .title {
+        font-weight: 600;
+        line-height: 30px; }
+        .dark-sec.testimonial-sec .sec-body .testimonial-carousel .carousel-cell .cell-text .title:before {
+          content: '';
+          background: url("../images/icons/testimonial/block-quote.svg");
+          width: 45px;
+          height: 40px;
+          background-size: contain;
+          background-repeat: no-repeat;
+          display: block; }
+      .dark-sec.testimonial-sec .sec-body .testimonial-carousel .carousel-cell .cell-text .text {
+        padding: 0 0 2rem; }
+      .dark-sec.testimonial-sec .sec-body .testimonial-carousel .carousel-cell .cell-text .footer {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; }
+        .dark-sec.testimonial-sec .sec-body .testimonial-carousel .carousel-cell .cell-text .footer .footer-logo {
+          content: '';
+          display: block;
+          width: 75px;
+          height: 32px;
+          margin-right: 14px;
+          background-size: contain !important;
+          background-repeat: no-repeat !important; }
+        .dark-sec.testimonial-sec .sec-body .testimonial-carousel .carousel-cell .cell-text .footer .author {
+          border-left: 2px solid rgba(0, 0, 0, 0.1);
+          padding-left: 1rem; }
+          .dark-sec.testimonial-sec .sec-body .testimonial-carousel .carousel-cell .cell-text .footer .author .name {
+            font-weight: 600; }
 
 /*!
  * animate.css -http://daneden.me/animate

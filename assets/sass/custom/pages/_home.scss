@@ -756,7 +756,7 @@
     .columns {
       display: flex;
       flex-wrap: wrap;
-
+      
       //column
       .column {
         display: block;
@@ -784,18 +784,121 @@
       }
     }
   }
-
+  
   // Testimonial section
   &.testimonial-sec {
-
+    
     // header
     .sec-header {
-
+      
       // heading 
       .text-heading {
         max-width: 350px;
         margin: 0 auto;
         line-height: 1.4;
+      }
+    }
+    
+    // body
+    .sec-body {
+      
+      // carousel section
+      .testimonial-carousel {
+        margin: 3rem 0;
+        
+        // bg sec
+        .bg {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          width: calc(25vw - 12px);
+          pointer-events: none;
+          // -webkit-transition: .5s opacity;
+          // transition: .5s opacity;
+          
+          // left white sec
+          &.left {
+            left: 0;
+            background: linear-gradient(to right, rgba($white, 1) 20%, rgba($white, 0.2));
+            
+          }
+          
+          //right white sec
+          &.right {
+            
+          }
+        }
+        
+        //carousel cell
+        .carousel-cell {
+          padding: 0 15px;
+          
+          // cell-text
+          .cell-text {
+            width: calc(50vw - 24px);
+            height: 350px;
+            background: $white;
+            border: 1px solid rgba($black, 0.05);
+            box-shadow: 2px 4px 6px 1px rgba($black, 0.05), 0 1px 1px rgba($black, 0.04);
+            white-space: normal;
+            padding: 30px;
+            overflow-y: auto;
+            
+            // title
+            .title {
+              font-weight: 600;
+              line-height: 30px;
+              
+              &:before {
+                content: '';
+                background: url('../images/icons/testimonial/block-quote.svg');
+                width: 45px;
+                height: 40px;
+                background-size: contain;
+                background-repeat: no-repeat;
+                display: block;
+                
+              }
+            }
+            
+            // text
+            .text {
+              padding: 0 0 2rem;
+            }
+            
+            // footer
+            .footer {
+              display: flex;
+              flex-wrap: wrap;
+              align-items: center;
+              
+              // logo
+              .footer-logo {
+                content: '';
+                display: block;
+                width: 75px;
+                height: 32px;
+                margin-right: 14px;
+                background-size: contain !important;
+                background-repeat: no-repeat !important;
+              }
+              
+              // author
+              .author {
+                border-left: 2px solid rgba($black, 0.1);
+                padding-left: 1rem;
+                
+                // name
+                .name {
+                  font-weight: 600;
+                }
+                
+                // designation
+                .position {}
+              }
+            }
+          }
+        }
       }
     }
   }

@@ -49,3 +49,11 @@ $('.add-new').click(function() {
   $('.form-check-input', $pane).prop('id', 'check'+num);
   
 });
+
+// Flickity
+$('.testimonial-carousel').flickity({
+  // options
+  cellAlign: 'center',
+  contain: true,
+  pageDots: false
+});
