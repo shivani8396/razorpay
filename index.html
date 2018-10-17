@@ -45,6 +45,9 @@
           <li class="nav-item left-li">
             <a href="" class="nav-link left-link">Resources</a>
           </li>
+          <li class="nav-item left-li">
+            <a href="" class="nav-link left-link">Support</a>
+          </li>
         </ul>
         
         <ul class="navbar-nav ml-auto right-list">
@@ -122,7 +125,7 @@
         <div class="cards text-center column">
           
           <div class="background" style="background-image: url('assets/images/backgrounds/1.svg');"></div>
-          <div>
+          <div class="column-body">
             <div class="header">
               <img src="assets/images/icons/payments.svg" alt="" class="image-icon">
               <h3 class="title">Payment Gateway</h3>
@@ -140,7 +143,7 @@
         <div class="cards text-center column">
           
           <div class="background" style="background-image: url('assets/images/backgrounds/2.svg');"></div>
-          <div>
+          <div class="column-body">
             <div class="header">
               <img src="assets/images/icons/subscriptions.svg" alt="" class="image-icon">
               <h3 class="title">Subscriptions</h3>
@@ -158,7 +161,7 @@
         <div class="cards text-center column">
           
           <div class="background" style="background-image: url('assets/images/backgrounds/3.svg');"></div>
-          <div>
+          <div class="column-body">
             <div class="header">
               <img src="assets/images/icons/route.svg" alt="" class="image-icon">
               <h3 class="title">Route</h3>
@@ -179,7 +182,7 @@
         <div class="cards text-center column">
           
           <div class="background" style="background-image: url('assets/images/backgrounds/4.svg');"></div>
-          <div>
+          <div class="column-body">
             <div class="header">
               <img src="assets/images/icons/smartcollect.svg" alt="" class="image-icon">
               <h3 class="title">Smart Collect</h3>
@@ -197,7 +200,7 @@
         <div class="cards text-center column">
           
           <div class="background" style="background-image: url('assets/images/backgrounds/5.svg');"></div>
-          <div>
+          <div class="column-body">
             <div class="header">
               <img src="assets/images/icons/paymentlinks.svg" alt="" class="image-icon">
               <h3 class="title">Payment links</h3>
@@ -215,7 +218,7 @@
         <div class="cards text-center column">
           
           <div class="background" style="background-image: url('assets/images/backgrounds/6.svg');"></div>
-          <div>
+          <div class="column-body">
             <div class="header">
               <img src="assets/images/icons/invoices.svg" alt="" class="image-icon">
               <h3 class="title">Invoices</h3>
@@ -336,7 +339,9 @@
       <!-- scroll -->
       <div class="column">
         <div class="client-list">
-          
+          <div class="wrapper">
+            <div class="client-image"></div>
+          </div>
         </div>
       </div>
     </div>
@@ -455,67 +460,129 @@
   
 </section>
 
-<!-- jquery form -->
-<section class="demo-form" id="demoForm">
-  <form class="form">
-    <div class="pane" id="pane1">
-      <h3 class="heading">Person 1 Details</h3>
-      <div class="form-row">
-        <div class="form-group col">
-          <label for="firstName">First name</label>
-          <input type="text" class="form-control first-name" id="firstName1" placeholder="First name" required>
-          <div class="valid-feedback">
-            Looks good!
-          </div>
-        </div>
-        <div class="form-group col">
-          <label for="lastName">Last name</label>
-          <input type="text" class="form-control last-name" id="lastName1" placeholder="Last name" required>
-          <div class="valid-feedback">
-            Looks good!
-          </div>
+<!-- Footer section -->
+<footer class="footer-page">
+  <div class="bg-footer"></div>
+  <div class="container">
+    <div class="columns">
+      
+      <div class="column">
+        <img class="footer-logo" src="assets/images/logo.svg" alt="">
+        
+        <div>
+          <p class="footer-text">
+            Razorpay is the only payments solution in India which allows businesses to accept, process and disburse payments 
+            with its product suite. It gives you access to all payment modes including credit card, debit card, netbanking, 
+            UPI and popular wallets including JioMoney, Mobikwik, Airtel Money, FreeCharge, Ola Money and PayZapp.
+          </p>
+          <p class="footer-text">
+            Manage Your marketplace, automate NEFT/RTGS/IMPS bank transfers, collect recurring payments, share invoices 
+            with customers - all from a single platform. Fast forward your business with Razorpay.
+          </p>
         </div>
         
-      </div>
-      <div class="form-row">
-        <div class="form-group col">
-          <label for="mail">Email address</label>
-          <input type="email" class="form-control mail" id="mail1" aria-describedby="email" placeholder="Enter email">
-          <small id="email" class="form-text text-muted text-left">* We'll never share your email with anyone else.</small>
-        </div>
-        <div class="form-group col">
-          <label for="password">Password</label>
-          <input type="password" class="form-control password" id="password1" placeholder="Password">
-        </div>
-      </div>
-      <div class="form-row">
-        <div class="form-group col">
-          <label for="inputState">State</label>
-          <select id="inputState1" class="form-control select-state">
-            <option selected>Choose...</option>
-            <option>J&K</option>
-            <option>Punjab</option>
-            <option>Haryana</option>
-          </select>
-        </div>
-        <div class="form-group col">
-          <div class="custom-file" style="margin-top: 2rem;">
-            <input type="file" class="custom-file-input" id="customFile1">
-            <label class="custom-file-label" for="customFile">Choose file</label>
+        <div class="subscription">
+          <h2 class="footer-title">Subscribe to our newsletter</h2>
+          
+          <div>
+            <form action="" class="form-contact">
+              <input type="email" class="email-contact" placeholder="Your email address">
+              <button class="signup-btn" type="submit">Sign Up <span><i class="icon ion-md-arrow-forward"></i></span></button>
+            </form>
           </div>
+          
+          <a href="#">
+            <img class="footer-logo" src="assets/images/footer-logo.svg" alt="">
+          </a>
         </div>
       </div>
-      <div class="form-group form-check text-left">
-        <input type="checkbox" class="form-check-input" id="check1">
-        <label class="form-check-label" for="check">I accept that the above stated details are all true.</label>
+      
+      <div class="column columns big p-0">
+        
+        <div class="column">
+          <ul class="list-group">
+            <li class="footer-title m-0">Products</li>
+            <li class="item"><a href="#" class="link-footer">Payment Gateway</a></li>
+            <li class="item"><a href="#" class="link-footer">Route</a></li>
+            <li class="item"><a href="#" class="link-footer">Subscriptions</a></li>
+            <li class="item"><a href="#" class="link-footer">Smart Collect</a></li>
+            <li class="item"><a href="#" class="link-footer">Invoices</a></li>
+            <li class="item"><a href="#" class="link-footer">Payment Links</a></li>
+          </ul>
+          
+          <ul class="list-group">
+            <li class="footer-title m-0">More</li>
+            <li class="item"><a href="#" class="link-footer">Pricing</a></li>
+            <li class="item"><a href="#" class="link-footer">Checkout demo</a></li>
+            <li class="item"><a href="#" class="link-footer">BharatQR</a></li>
+            <li class="item"><a href="#" class="link-footer">Smart UPI</a></li>
+            <li class="item"><a href="#" class="link-footer">ePOS</a></li>
+            <li class="item"><a href="#" class="link-footer">eCOD</a></li>
+          </ul>
+        </div>
+        
+        <div class="column">
+          <ul class="list-group">
+            <li class="footer-title m-0">Developers</li>
+            <li class="item"><a href="#" class="link-footer">decisions</a></li>
+            <li class="item"><a href="#" class="link-footer">Integrations</a></li>
+            <li class="item"><a href="#" class="link-footer">API Reference</a></li>
+          </ul>
+          
+          <ul class="list-group">
+            <li class="footer-title m-0">Resources</li>
+            <li class="item"><a href="#" class="link-footer">Blog</a></li>
+            <li class="item"><a href="#" class="link-footer">Customer Stories</a></li>
+            <li class="item"><a href="#" class="link-footer">Events</a></li>
+            <li class="item"><a href="#" class="link-footer">Chargeback Guide</a></li>
+            <li class="item"><a href="#" class="link-footer">Settlement Guide</a></li>
+          </ul>
+        </div>
+        
+        <div class="column">
+          <ul class="list-group">
+            <li class="footer-title m-0">Company</li>
+            <li class="item"><a href="#" class="link-footer">About Us</a></li>
+            <li class="item"><a href="#" class="link-footer">Careers</a><span class="badge badge-success">We are hiring!</span></li>
+            <li class="item"><a href="#" class="link-footer">T&C</a></li>
+            <li class="item"><a href="#" class="link-footer">Privacy</a></li>
+            <li class="item"><a href="#" class="link-footer">Responsible Disclosure</a></li>
+          </ul>
+          
+          <ul class="list-group">
+            <li class="footer-title m-0">Contact & Support</li>
+            <li class="item"><a href="#" class="link-footer">Contact Us</a></li>
+            <li class="item"><a href="#" class="link-footer">Raise a request</a></li>
+            <li class="item"><a href="#" class="link-footer">Track refund status</a></li>
+            <li class="item"><a href="#" class="link-footer">File a grievance</a></li>
+            <li class="item"><a href="#" class="link-footer">Knowledge base</a></li>
+          </ul>
+          
+          <ul class="list-group">
+            <li class="footer-title m-0">Find us online</li>
+            <li class="social-link">
+              <a href="#" target="_blank"><i class="icon ion-logo-facebook fb"></i></a>
+              <a href="#" target="_blank"><i class="icon ion-logo-twitter tw"></i></a>
+              <a href="#" target="_blank"><i class="icon ion-logo-instagram ig"></i></a>
+              <a href="#" target="_blank"><i class="icon ion-logo-github gh"></i></a>
+              <a href="#" target="_blank"><i class="icon ion-logo-linkedin li"></i></a>
+            </li>
+          </ul>
+          
+          <ul class="list-group">
+            <li class="copyright">
+              &copy; Razorpay 2018
+              <br>
+              All Rights Reserved
+            </li>
+          </ul>
+          
+        </div>
       </div>
+      
     </div>
-    <div class="footer-form text-right" style="margin: 2rem;">
-      <button class="btn btn-info add-new">Add new</button>
-      <button type="submit" class="btn btn-primary submit-btn">Submit</button>
-    </div>
-  </form>
-</section>
+  </div>
+</footer>
 
 <!-- jQuery first, then Bootstrap JS -->
 <script src="assets/js/jquery.min.js"></script>

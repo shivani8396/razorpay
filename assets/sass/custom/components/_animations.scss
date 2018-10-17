@@ -1,3 +1,16 @@
 // ######################################## //
 // ## ANIMATIONS.SCSS ## //
 // ######################################## //
+
+@keyframes clientlist {
+  
+  // At 0%
+  0% {
+    transform: translateY(0%);
+  }
+  
+  // At 100%
+  100% {
+    transform: translateY(-100%);
+  }
+}

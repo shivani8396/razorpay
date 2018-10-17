@@ -7,50 +7,52 @@
 
 // flickity button
 .flickity-button {
-  position: relative;
+  
+  position: absolute;
+  top: 115%;
+  transform: translate(-50%, -50%);
   border: 1px solid rgba($theme-blue, 0.3);
-  margin: 0 2rem;
-  transform: translate(1170%, 50%);
   transition: 0.2s opacity;
   box-shadow: 0 1px 4px 0 rgba($black, 0.1);
   
-  //prev next button
-  &.flickity-prev-next-buttton {
-
-    &.previous {
-      left: 0 !important;
+  
+  &.previous {
+    left: 46% !important;
+    
+    @include desktop-lg {
+      left: 48% !important;
     }
-
-    &.next {
-      right: 0;
-    }
+  }
+  
+  &.next {
+    left: 52% !important;
   }
   
   // flickity arrow
   .flickity-button-icon {
     fill: $theme-blue;
-    top: 20%;
-    left: 18%;
+    top: 50%;
+    left: 50%;
     width: 40%;
     height: 60%;
-    transform: translate(25%, 0%);
+    transform: translate(-50%, -50%);
   }
 }
 
 // prev next button
-  .flickity-prev-next-buttton {
-
-    &.previous {
-      left: 0 !important;
-    }
-
-    &.next {
-      right: 0;
-    }
+.flickity-prev-next-buttton {
+  
+  &.previous {
+    left: 0 !important;
   }
-
-  // disabled button
-  .flickity-button:disabled {
-    opacity: 0;
-    transition: 0.2s opacity;
+  
+  &.next {
+    right: 0;
   }
+}
+
+// disabled button
+.flickity-button:disabled {
+  opacity: 0;
+  transition: 0.2s opacity;
+}

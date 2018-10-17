@@ -110,7 +110,7 @@ $desktop-width-extra-lg: 2500px;
 	}
 }
 
-	// Extra-large Desktops
+// Extra-large Desktops
 @mixin desktop-extra-lg {
 	@media (min-width: #{$desktop-width-extra-lg}) {
 		@content;
@@ -126,95 +126,96 @@ $desktop-width-extra-lg: 2500px;
 
 // Firefox Browsers Only
 // @mixin firefox {
-// 	@-moz-document url-prefix() {
-// 		@content;
-// 	}
-// }
-
-
-// ----------------------------------
-// Transition Mixin
-// ----------------------------------
-@mixin transition($transition-property: all, $transition-time: 0.3s, $method: cubic-bezier(0.165, 0.84, 0.44, 1)) {
-	-webkit-transition: $transition-property $transition-time $method;
-	-moz-transition: $transition-property $transition-time $method;
-	-ms-transition: $transition-property $transition-time $method;
-	-o-transition: $transition-property $transition-time $method;
-	transition: $transition-property $transition-time $method;
-}
-
-
-
-// ----------------------------------
-// Brandon Grotesque Font Family
-// ----------------------------------
-@mixin ff-primary() {
-	font-family: 'muli', -apple-system,system-ui,BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-}
-
-
-
-// ----------------------------------
-// Truncate Text (ellipsis) Mixin
-// ----------------------------------
-@mixin truncate($truncation-boundary) {
-	max-width: $truncation-boundary;
-	white-space: nowrap;
-	overflow: hidden;
-	text-overflow: ellipsis;
-}
-
-
-
-// ----------------------------------
-// Font Smoothing Mixin (Cross Browser)
-// ----------------------------------
-@mixin font-smoothing($value: on) {
-	@if $value == on {
-		-webkit-font-smoothing: antialiased;
-		-moz-osx-font-smoothing: grayscale;
-	}
-	@else {
-		-webkit-font-smoothing: subpixel-antialiased;
-		-moz-osx-font-smoothing: auto;
-	}
-}
-
-
-
-// ----------------------------------
-// Keyframes Mixin (Cross Browser)
-// ----------------------------------
-@mixin keyframes($animation-name) {
-	@-webkit-keyframes #{$animation-name} {
-		@content;
-	}
-	@-moz-keyframes #{$animation-name} {
-		@content;
-	}
-	@-ms-keyframes #{$animation-name} {
-		@content;
-	}
-	@-o-keyframes #{$animation-name} {
-		@content;
-	}
-	@keyframes #{$animation-name} {
-		@content;
-	}
-}
-
-
-
-// ----------------------------------
-// Animation (Cross Browser)
-// ----------------------------------
-@mixin animation($str) {
-  -webkit-animation: #{$str};
-  -moz-animation: #{$str};
-  -ms-animation: #{$str};
-  -o-animation: #{$str};
-  animation: #{$str};
-}
-
-
-
+	// 	@-moz-document url-prefix() {
+		// 		@content;
+		// 	}
+		// }
+		
+		
+		// ----------------------------------
+		// Transition Mixin
+		// ----------------------------------
+		@mixin transition($transition-property: all, $transition-time: 0.3s, $method: cubic-bezier(0.165, 0.84, 0.44, 1)) {
+			-webkit-transition: $transition-property $transition-time $method;
+			-moz-transition: $transition-property $transition-time $method;
+			-ms-transition: $transition-property $transition-time $method;
+			-o-transition: $transition-property $transition-time $method;
+			transition: $transition-property $transition-time $method;
+		}
+		
+		
+		
+		// ----------------------------------
+		// Brandon Grotesque Font Family
+		// ----------------------------------
+		@mixin ff-primary() {
+			font-family: 'muli', -apple-system,system-ui,BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+		}
+		
+		
+		
+		// ----------------------------------
+		// Truncate Text (ellipsis) Mixin
+		// ----------------------------------
+		@mixin truncate($truncation-boundary) {
+			max-width: $truncation-boundary;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
+		
+		
+		
+		// ----------------------------------
+		// Font Smoothing Mixin (Cross Browser)
+		// ----------------------------------
+		@mixin font-smoothing($value: on) {
+			@if $value == on {
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale;
+			}
+			@else {
+				-webkit-font-smoothing: subpixel-antialiased;
+				-moz-osx-font-smoothing: auto;
+			}
+		}
+		
+		
+		
+		// ----------------------------------
+		// Keyframes Mixin (Cross Browser)
+		// ----------------------------------
+		@mixin keyframes($animation-name) {
+			@-webkit-keyframes #{$animation-name} {
+				@content;
+			}
+			@-moz-keyframes #{$animation-name} {
+				@content;
+			}
+			@-ms-keyframes #{$animation-name} {
+				@content;
+			}
+			@-o-keyframes #{$animation-name} {
+				@content;
+			}
+			@keyframes #{$animation-name} {
+				@content;
+			}
+		}
+		
+		
+		
+		// ----------------------------------
+		// Animation (Cross Browser)
+		// ----------------------------------
+		@mixin animation($str) {
+			-webkit-animation: #{$str};
+			-moz-animation: #{$str};
+			-ms-animation: #{$str};
+			-o-animation: #{$str};
+			animation: #{$str};
+		}
+		
+		
+		
+		
