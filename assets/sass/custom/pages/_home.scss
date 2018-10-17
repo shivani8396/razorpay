@@ -928,16 +928,39 @@
                   display: flex;
                   flex-wrap: wrap;
                   align-items: center;
-                  
+                  position: absolute;
+                  bottom: 2px;
+                  left: 17px;
+                  background: #fff;
+                  padding: 32px;
+                 
                   // logo
                   .footer-logo {
                     content: '';
                     display: block;
-                    width: 75px;
-                    height: 32px;
                     margin-right: 14px;
                     background-size: contain !important;
                     background-repeat: no-repeat !important;
+                    
+                    &.first {
+                      width: 75px;
+                      height: 32px;
+                    }
+                    
+                    &.sec {
+                      width: 100px;
+                      height: 15px;
+                    }
+
+                    &.third {
+                      width: 115px;
+                      height: 32px;
+                    }
+
+                    &.forth {
+                      width: 55px;
+                      height: 35px;
+                    }
                   }
                   
                   // author
@@ -949,9 +972,6 @@
                     .name {
                       font-weight: 600;
                     }
-                    
-                    // designation
-                    .position {}
                   }
                 }
               }
