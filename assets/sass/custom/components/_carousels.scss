@@ -22,6 +22,10 @@
     @include desktop-lg {
       left: 48% !important;
     }
+    
+    @include mobile {
+      left: 35% !important;
+    }
   }
   
   &.next {
