@@ -56,3 +56,13 @@ $('.testimonial-carousel').flickity({
   cellAlign: 'center',
   pageDots: false
 });
+
+// navbar mobile
+$('.menu-nav').click(function() {
+  if ($(this).hasClass('open-menu')) {
+    $(this).removeClass('open-menu');
+  }
+  else {
+    $(this).addClass('open-menu');
+  }
+});
