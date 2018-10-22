@@ -58,11 +58,30 @@ $('.testimonial-carousel').flickity({
 });
 
 // navbar mobile
+
+$(document).ready(function() {
 $('.menu-nav').click(function() {
   if ($(this).hasClass('open-menu')) {
     $(this).removeClass('open-menu');
+    $('.navbar-menu').css('display', 'none');
+    $('.nav-mobile').removeClass('backdrop');
+    
   }
   else {
+    $('.navbar-menu').css('display', 'block');
     $(this).addClass('open-menu');
+    $('.nav-mobile').addClass('backdrop');
   }
+});
+
+//submenu js
+$('.nav-link').click(function() {
+  $(this).toggleClass('change');
+});
+
+// active class on list item
+$('.navbar-nav .nav-item .nav-link').click(function() {
+  $(this).toggleClass('active');
+});
+
 });
