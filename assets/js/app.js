@@ -59,7 +59,6 @@ $('.testimonial-carousel').flickity({
 
 // navbar mobile
 
-$(document).ready(function() {
 $('.menu-nav').click(function() {
   if ($(this).hasClass('open-menu')) {
     $(this).removeClass('open-menu');
@@ -84,4 +83,12 @@ $('.navbar-nav .nav-item .nav-link').click(function() {
   $(this).toggleClass('active');
 });
 
+//remove navbar on backdrop( click
+$('.backdrop').click(function() {
+  alert('hi');
+  console.log('1');
+  $('.menu-nav').removeClass('open-menu');
+  $('.navbar-menu').css('display', 'none');
+  // $(this).removeClass();
 });
+

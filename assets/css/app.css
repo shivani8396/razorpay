@@ -11064,66 +11064,76 @@ html {
     top: 0;
     right: 0;
     z-index: 2; }
-    .navbar .navbar-menu .navbar-nav .menu-header {
-      background: #eee;
-      height: 80px;
-      font-size: 14px;
-      color: #222222;
-      line-height: 80px;
-      padding-left: 18px;
-      border-bottom: 1px solid #e0e0e0;
-      text-transform: uppercase;
-      letter-spacing: 1px; }
-    .navbar .navbar-menu .navbar-nav .nav-item .nav-link {
-      background: #ffffff;
-      color: #555555;
-      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-      padding: 22px 18px;
-      font-size: 15px; }
-      .navbar .navbar-menu .navbar-nav .nav-item .nav-link.active {
-        color: #528ff0; }
-    .navbar .navbar-menu .navbar-nav .nav-item .dropdown-item {
-      font-weight: bold;
-      letter-spacing: -.1px;
-      color: #515978;
-      font-size: 15px;
-      line-height: 20px;
-      padding: 0.5rem 1.25rem; }
-    .navbar .navbar-menu .navbar-nav .nav-item .dropdown-toggle.change:after {
-      -webkit-transform-origin: center center;
-      -ms-transform-origin: center center;
-      transform-origin: center center;
-      -webkit-transform: rotate(180deg);
-      -ms-transform: rotate(180deg);
-      transform: rotate(180deg);
-      padding: 22px 0; }
-    .navbar .navbar-menu .navbar-nav .nav-item .dropdown-toggle:after {
-      display: inline-block;
-      font-family: 'ionicons';
-      content: "\f3d0";
-      border: none;
-      padding: 0 0.5rem;
-      float: right;
-      -webkit-transition: 0.5s -webkit-transform;
-      transition: 0.5s -webkit-transform;
-      -o-transition: 0.5s transform;
-      transition: 0.5s transform;
-      transition: 0.5s transform, 0.5s -webkit-transform; }
-    .navbar .navbar-menu .navbar-nav .nav-item .dropdown-menu.open {
-      background-color: #eee;
-      border: none;
-      margin: 0;
-      border-radius: 0;
-      -webkit-transition: 0.4s;
-      -o-transition: 0.4s;
-      transition: 0.4s; }
-      .navbar .navbar-menu .navbar-nav .nav-item .dropdown-menu.open .dropdown-toggle::after {
+    .navbar .navbar-menu .navbar-nav {
+      -webkit-transition-delay: 0.5s;
+      -o-transition-delay: 0.5s;
+      transition-delay: 0.5s; }
+      .navbar .navbar-menu .navbar-nav .menu-header {
+        background: #eee;
+        height: 80px;
+        font-size: 14px;
+        color: #222222;
+        line-height: 80px;
+        padding-left: 18px;
+        border-bottom: 1px solid #e0e0e0;
+        text-transform: uppercase;
+        letter-spacing: 1px; }
+      .navbar .navbar-menu .navbar-nav .nav-item .nav-link {
+        background: #ffffff;
+        color: #555555;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 22px 18px;
+        font-size: 15px; }
+        .navbar .navbar-menu .navbar-nav .nav-item .nav-link.active {
+          color: #528ff0; }
+      .navbar .navbar-menu .navbar-nav .nav-item .dropdown-item {
+        font-weight: bold;
+        letter-spacing: -.1px;
+        color: #515978;
+        font-size: 15px;
+        line-height: 20px;
+        padding: 0.5rem 1.25rem; }
+      .navbar .navbar-menu .navbar-nav .nav-item .dropdown-toggle.change:after {
+        -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+        transform-origin: center center;
         -webkit-transform: rotate(180deg);
         -ms-transform: rotate(180deg);
         transform: rotate(180deg);
-        -webkit-transition: 0.5s;
-        -o-transition: 0.5s;
-        transition: 0.5s; }
+        padding: 22px 0; }
+      .navbar .navbar-menu .navbar-nav .nav-item .dropdown-toggle:after {
+        display: inline-block;
+        font-family: 'ionicons';
+        content: "\f3d0";
+        border: none;
+        padding: 0 0.5rem;
+        float: right;
+        -webkit-transition: 0.5s -webkit-transform;
+        transition: 0.5s -webkit-transform;
+        -o-transition: 0.5s transform;
+        transition: 0.5s transform;
+        transition: 0.5s transform, 0.5s -webkit-transform; }
+      .navbar .navbar-menu .navbar-nav .nav-item .dropdown-menu.open {
+        background-color: #eee;
+        border: none;
+        margin: 0;
+        border-radius: 0;
+        -webkit-transition: 0.4s;
+        -o-transition: 0.4s;
+        transition: 0.4s;
+        -webkit-transition-delay: 0.5s;
+        -o-transition-delay: 0.5s;
+        transition-delay: 0.5s; }
+        .navbar .navbar-menu .navbar-nav .nav-item .dropdown-menu.open .dropdown-toggle::after {
+          -webkit-transform: rotate(180deg);
+          -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+          -webkit-transition: 0.3s;
+          -o-transition: 0.3s;
+          transition: 0.3s;
+          -webkit-transition-delay: 0.5s;
+          -o-transition-delay: 0.5s;
+          transition-delay: 0.5s; }
 
 .banner {
   position: relative;
@@ -11435,7 +11445,8 @@ html {
       -webkit-border-image: -webkit-radial-gradient(rgba(0, 0, 0, 0.2), transparent) 0.5;
       -o-border-image: -o-radial-gradient(rgba(0, 0, 0, 0.2), transparent) 0.5;
       border-image: radial-gradient(rgba(0, 0, 0, 0.2), transparent) 0.5;
-      padding: 12px; }
+      padding: 12px;
+      z-index: 2; }
       .dark-sec.more-sec .sec-body .columns .cards:first-child {
         border-right: 2px solid; }
         @media (max-width: 767px) {
@@ -11448,7 +11459,18 @@ html {
           .dark-sec.more-sec .sec-body .columns .cards:last-child {
             border-left: none; } }
       .dark-sec.more-sec .sec-body .columns .cards:hover {
-        z-index: 2; }
+        z-index: 3; }
+        .dark-sec.more-sec .sec-body .columns .cards:hover .background {
+          position: absolute;
+          z-index: 1;
+          opacity: 1;
+          background-color: #f3faff;
+          -webkit-transform: scale(1.2, 1.2);
+          -ms-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2); }
+        .dark-sec.more-sec .sec-body .columns .cards:hover .column-body {
+          position: absolute;
+          z-index: 3; }
       @media (max-width: 767px) {
         .dark-sec.more-sec .sec-body .columns .cards {
           border-bottom: 2px solid;
@@ -11464,21 +11486,14 @@ html {
         background-position: right bottom;
         -webkit-box-shadow: 5px 7px 10px 0 rgba(69, 151, 219, 0.06);
         box-shadow: 5px 7px 10px 0 rgba(69, 151, 219, 0.06);
-        border: none(#000000, 0.04);
-        -webkit-transition: 0.5s;
-        -o-transition: 0.5s;
-        transition: 0.5s;
+        border: 1px solid rgba(0, 0, 0, 0.04);
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s;
         -webkit-transform-origin: center;
         -ms-transform-origin: center;
         transform-origin: center;
         opacity: 0; }
-        .dark-sec.more-sec .sec-body .columns .cards .background:hover {
-          position: absolute;
-          opacity: 1;
-          background-color: rgba(69, 151, 219, 0.1);
-          -webkit-transform: scale(1.2, 1.2);
-          -ms-transform: scale(1.2, 1.2);
-          transform: scale(1.2, 1.2); }
       .dark-sec.more-sec .sec-body .columns .cards .column-body .header .image-icon {
         width: 3rem;
         height: 3rem; }
@@ -11931,10 +11946,10 @@ html {
       .dark-sec.contact-sec:after {
         right: 23%; } }
   .dark-sec.contact-sec .bg-dark-before {
-    background: -webkit-gradient(linear, left top, right top, color-stop(20%, #185fc0), to(rgba(69, 151, 219, 0.6)));
-    background: -webkit-linear-gradient(left, #185fc0 20%, rgba(69, 151, 219, 0.6) 100%);
-    background: -o-linear-gradient(left, #185fc0 20%, rgba(69, 151, 219, 0.6) 100%);
-    background: linear-gradient(to right, #185fc0 20%, rgba(69, 151, 219, 0.6) 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(20%, #185fc0), to(rgba(69, 151, 219, 0.8)));
+    background: -webkit-linear-gradient(left, #185fc0 20%, rgba(69, 151, 219, 0.8) 100%);
+    background: -o-linear-gradient(left, #185fc0 20%, rgba(69, 151, 219, 0.8) 100%);
+    background: linear-gradient(to right, #185fc0 20%, rgba(69, 151, 219, 0.8) 100%);
     width: 100%;
     height: 100%;
     position: absolute;
