@@ -299,7 +299,7 @@
       width: 20px;
       height: 20px;
       top: -17px;
-      right: -212px;
+      right: -245px;
       padding: 20px;
       box-sizing: content-box;
       z-index: 3;
@@ -1442,10 +1442,11 @@
           height: 120px;
           transform: skewY(3deg);
           transform-origin: 0 0;
-          background: linear-gradient(to bottom, rgba($white, 0.8), rgba($white, 0));
+          background: linear-gradient(to bottom, rgba($white, 0.8) 0%, rgba($white, 0) 100%);
           
           @include mobile {
             transform: skewY(0);
+            background: linear-gradient(to bottom, rgba($white, 0.3) 0%, rgba($white, 0.5) 50%,  rgba($white, 0) 100%);
           }
         }
         
@@ -1917,7 +1918,7 @@
       background: linear-gradient(to right,#eef9fe,#edf7ff);
       position: absolute;
       z-index: 0;
-      top: -7%;
+      top: -9%;
       left: 4%;
       transform: rotate(6deg) skewX(45deg) skewY(-11deg);
       
