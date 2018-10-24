@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
+  
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/app.css">
+  
+  <title>Autocomplete</title>
+</head>
+<body class="autocomplete-form">
+  <h1>AUTOCOMPLETE</h1>
+  <!-- <p>Content written as an JSON array will be converted into a JavaScript array.</p> -->
+  
+  <!-- <form class="form-inline mt--40">
+    <div class="form-group">
+      <label for="hobby" class="col-form-label mr--100">Enter your hobbies</label>
+      <input class="form-control mr--10" id="hobby" type="text" name="hobbies" placeholder="Type the text">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form> -->
+
+  <form autocomplete="off" action="/action_page.php">
+    <div class="autocomplete" style="width:300px;">
+      <input id="myInput" type="text" name="myCountry" placeholder="Country">
+    </div>
+    <input type="submit">
+  </form>
+  
+  <!-- <div class="ui-widget">
+    <label for="city">Your city: </label>
+    <input id="city">
+    Powered by <a href="http://geonames.org">geonames.org</a>
+  </div> -->
+  
+  <!-- <div class="ui-widget" style="margin-top:2em; font-family:Arial">
+    Result:
+    <div id="log" style="height: 200px; width: 300px; overflow: auto;" class="ui-widget-content"></div>
+  </div> -->
+  
+  <!-- <p id="demo"></p> -->
+  
+  <!-- <script>
+    //   var book = new Object();
+    //   book.name = "Cloud Atlas";
+    //  document.write("Book name is: " + book.name);
+    
+    function book(name, author) {
+      this.name = name;
+      this.author = author;
+    }
+    
+    var book = new book("Cloud Atlas", "David");
+    document.write("Book name is :" + book.name + "<br/>");
+    document.write("Book author is :" + book.author);
+  </script> -->
+  
+  <!-- <script>
+    
+    // var xmlhttp = new XMLHttpRequest();
+    // xmlhttp.onreadystatechange = function() {
+      //   if(this.readyState == 4 && this.status == 200) {
+        //     var myArr = JSON.parse('["A", "B"]');
+        //     document.getElementById("demo").innerHTML = myArr[0];
+        //   }
+        // };
+        // xmlhttp.open("GET", "http://127.0.0.1:8000/json_demo_array.txt", true);
+        // xmlhttp.send();
+        // var myArr = JSON.parse('["A", "B"]');
+        // document.getElementById("demo").innerHTML = myArr[0];  
+        
+      </script> -->
+     
+      <script>
+          autocomplete(document.getElementById("myInput"), countries);
+          </script>
+      <script src="assets/js/jquery.min.js"></script>
+      <script src="assets/js/popper.min.js"></script>
+      <script src="assets/js/bootstrap.min.js"></script>
+      <script src="assets/js/app.js"></script>
+      
+    </body>
+    </html>
