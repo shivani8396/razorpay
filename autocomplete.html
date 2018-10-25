@@ -14,74 +14,65 @@
 </head>
 <body class="autocomplete-form">
   <h1>AUTOCOMPLETE</h1>
-  <!-- <p>Content written as an JSON array will be converted into a JavaScript array.</p> -->
+  <div>
+    computer language:
+    <datalist id="language"></datalist>
+    <input type="text" list="language" name="language" id="input-text" autocomplete="off" />
+    <br>
+    <br>
+    <button id="new-item">Add to List</button>
+    <br>
+    <br>
+    <p id="array">The list :</p>
+    <ul id="newarray">
+    <li> The new list is:</li>
+  </ul>
+    
+  </div>
   
-  <!-- <form class="form-inline mt--40">
-    <div class="form-group">
-      <label for="hobby" class="col-form-label mr--100">Enter your hobbies</label>
-      <input class="form-control mr--10" id="hobby" type="text" name="hobbies" placeholder="Type the text">
-    </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
-  </form> -->
 
-  <form autocomplete="off" action="/action_page.php">
-    <div class="autocomplete" style="width:300px;">
-      <input id="myInput" type="text" name="myCountry" placeholder="Country">
-    </div>
-    <input type="submit">
-  </form>
-  
-  <!-- <div class="ui-widget">
-    <label for="city">Your city: </label>
-    <input id="city">
-    Powered by <a href="http://geonames.org">geonames.org</a>
-  </div> -->
-  
-  <!-- <div class="ui-widget" style="margin-top:2em; font-family:Arial">
-    Result:
-    <div id="log" style="height: 200px; width: 300px; overflow: auto;" class="ui-widget-content"></div>
-  </div> -->
-  
-  <!-- <p id="demo"></p> -->
-  
-  <!-- <script>
-    //   var book = new Object();
-    //   book.name = "Cloud Atlas";
-    //  document.write("Book name is: " + book.name);
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/autocomplete.js"></script>
+
+<script>
+  // $(document).ready(function() {
+    $("#input-text").on("mouseover", function() {
+      var a = $(this).attr('name');
+      populate(a);
+    });
     
-    function book(name, author) {
-      this.name = name;
-      this.author = author;
-    }
+    var tree = ["a", "b"];
+    // print existing array 
+    $.each(tree, function(i, value) {
+      $('#array').append('<br/>' + value);
+    });
     
-    var book = new book("Cloud Atlas", "David");
-    document.write("Book name is :" + book.name + "<br/>");
-    document.write("Book author is :" + book.author);
-  </script> -->
-  
-  <!-- <script>
-    
-    // var xmlhttp = new XMLHttpRequest();
-    // xmlhttp.onreadystatechange = function() {
-      //   if(this.readyState == 4 && this.status == 200) {
-        //     var myArr = JSON.parse('["A", "B"]');
-        //     document.getElementById("demo").innerHTML = myArr[0];
-        //   }
-        // };
-        // xmlhttp.open("GET", "http://127.0.0.1:8000/json_demo_array.txt", true);
-        // xmlhttp.send();
-        // var myArr = JSON.parse('["A", "B"]');
-        // document.getElementById("demo").innerHTML = myArr[0];  
-        
-      </script> -->
-     
-      <script>
-          autocomplete(document.getElementById("myInput"), countries);
-          </script>
-      <script src="assets/js/jquery.min.js"></script>
-      <script src="assets/js/popper.min.js"></script>
-      <script src="assets/js/bootstrap.min.js"></script>
-      <script src="assets/js/app.js"></script>
-      
-    </body>
-    </html>
+    // print new array on button click
+    $("#new-item").on("click", function() {
+      if ($("#input-text").val() === '') {
+    alert("You must write something!");
+  } else {
+      // assign value of input
+      var text = $('#input-text').val();
+      // push new value
+      var newtree = tree.push(text).value;
+      // print array
+      $.each(tree, function(i, newtree) {
+        // console.log('value', value);
+        var item = $("#newarray").append('<li>' + newtree + '<span class="icon ion-ios-close close"></span></li>');
+        console.log('item', item);
+        var closebtns = $(".close");
+          console.log('closebtns[i]', closebtns[i]);
+        });
+      }
+        var closebtns = $(".close");
+        $(".close").on("click", function() {
+          console.log('close');
+          $(this).parent().css("display", "none");
+        })
+      });
+        </script>
+      </body>
+      </html>
