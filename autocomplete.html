@@ -23,11 +23,13 @@
     <button id="new-item">Add to List</button>
     <br>
     <br>
-    <p id="array">The list :</p>
+    <p id="array">The existing list is :</p>
     <ul id="newarray">
-    <li> The new list is:</li>
+    <p> The new list is:</p>
   </ul>
-    
+    <p id="demo">
+    </p>
+    <li class="header"></li>
   </div>
   
 
@@ -43,7 +45,19 @@
       populate(a);
     });
     
-    var tree = ["a", "b"];
+    // var xmlhttp = new XMLHttpRequest();
+    // xmlhttp.onreadystatechange = function() {
+    //     if(this.readyState == 4 && this.status == 200) {
+    //         var myArr = JSON.parse('["A", "B"]');
+    //         document.getElementById("demo").innerHTML = myArr[0];
+    //       }
+    //     };
+        // xmlhttp.open("GET", "myArr", true);
+        // xmlhttp.send();
+        // var myArr = JSON.parse('["A", "B"]');
+        // document.getElementById("demo").innerHTML = myArr[0];  
+
+    var tree = ["java", "javascript", "c", "php"];
     // print existing array 
     $.each(tree, function(i, value) {
       $('#array').append('<br/>' + value);
